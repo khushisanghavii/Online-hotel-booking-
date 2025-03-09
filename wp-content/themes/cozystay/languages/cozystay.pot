@@ -1,0 +1,2864 @@
+# Copyright (C) 2023 Loft.Ocean
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: CozyStay 1.3.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/cozystay\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-10-15T11:50:15+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.7.1\n"
+"X-Domain: cozystay\n"
+
+#. Theme Name of the theme
+#: includes/admin/options/theme-settings/class-theme-settings.php:71
+#: includes/admin/options/theme-settings/class-theme-settings.php:103
+#: includes/admin/options/theme-settings/class-theme-settings.php:158
+msgid "CozyStay"
+msgstr ""
+
+#. Theme URI of the theme
+msgid "https://cozystay.loftocean.com/"
+msgstr ""
+
+#. Description of the theme
+msgid "CozyStay is a WordPress theme for hotel booking."
+msgstr ""
+
+#. Author of the theme
+msgid "Loft.Ocean"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://www.loftocean.com/"
+msgstr ""
+
+#: comments.php:18
+msgid "Join the Conversation"
+msgstr ""
+
+#: comments.php:36
+msgid "Comments are closed."
+msgstr ""
+
+#: includes/admin/ajax/class-ajax-polylang-forms.php:18
+msgid "Request failed. Please try again later."
+msgstr ""
+
+#: includes/admin/ajax/class-ajax-polylang-forms.php:23
+msgid "Updated."
+msgstr ""
+
+#: includes/admin/customize/class-customize-control.php:261
+msgid "No image selected"
+msgstr ""
+
+#: includes/admin/customize/class-customize-control.php:273
+msgid "Choose Image"
+msgstr ""
+
+#: includes/admin/customize/class-customize-control.php:276
+msgid "Remove Image"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:44
+#: includes/admin/customize/configs/typography.php:70
+#: template-parts/page-header/archive-blog.php:7
+msgid "Blog"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:56
+msgid "Blog General"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:63
+#: includes/admin/customize/configs/blog.php:253
+msgid "Standard"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:64
+#: includes/admin/customize/configs/blog.php:254
+msgid "List"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:65
+msgid "Zigzag"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:66
+msgid "Grid"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:67
+msgid "Masonry"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:68
+msgid "Overlay"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:100
+#: includes/admin/customize/configs/rooms.php:69
+msgid "Read More Button Text"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:106
+msgid "Pagination Style"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:110
+msgid "Next/Prev Links"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:111
+msgid "With Page Number"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:112
+msgid "Load More Button"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:113
+msgid "Infinite Scroll"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:119
+msgid "Featured Date Label"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:127
+msgid "Load Post Metas ( like count ) Dynamically with AJAX"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:128
+msgid "Recommend enabling this option if any caching plugins are used on your site."
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:144
+msgid "words"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:157
+msgid "Post Excerpt Length"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:171
+msgid "Blog Page"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:238
+#: includes/admin/customize/configs/woocommerce.php:146
+msgid "Sidebar Layout"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:242
+#: includes/admin/customize/configs/woocommerce.php:168
+#: includes/admin/customize/configs/woocommerce.php:179
+#: includes/admin/metas/class-post-metas.php:245
+msgid "No Sidebar"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:243
+#: includes/admin/customize/configs/woocommerce.php:169
+#: includes/admin/customize/configs/woocommerce.php:180
+#: includes/admin/metas/class-post-metas.php:244
+msgid "Left Sidebar"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:244
+#: includes/admin/customize/configs/woocommerce.php:170
+#: includes/admin/customize/configs/woocommerce.php:181
+#: includes/admin/metas/class-post-metas.php:243
+msgid "Right Sidebar"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:249
+msgid "Posts Style"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:255
+msgid "ZigZag"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:256
+msgid "Grid 2 Columns"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:257
+msgid "Grid 3 Columns"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:258
+msgid "Masonry 2 Columns"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:259
+msgid "Masonry 3 Columns"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:260
+msgid "Overlay 2 Columns"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:261
+msgid "Overlay 3 Columns"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:266
+#: includes/admin/customize/configs/blog.php:280
+msgid "Image Ratio"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:270
+#: includes/admin/customize/configs/blog.php:284
+msgid "3:2"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:271
+#: includes/admin/customize/configs/blog.php:285
+msgid "4:3"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:272
+#: includes/admin/customize/configs/blog.php:286
+msgid "1:1"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:273
+#: includes/admin/customize/configs/blog.php:287
+msgid "4:5"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:274
+#: includes/admin/customize/configs/blog.php:288
+msgid "2:3"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:295
+msgid "Center Text"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:302
+msgid "With Border"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:310
+msgid "Show Post Excerpt"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:317
+msgid "Show Read More Button"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:323
+msgid "Display Selected Post Meta:"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:330
+msgid "Number of Posts Displayed Per Page"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:344
+msgid "Single Post"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:443
+msgid "Post Header Section"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:449
+msgid "Default Header Layout"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:453
+#: includes/admin/customize/configs/colors-styles.php:425
+#: includes/admin/customize/configs/font-family.php:1508
+#: includes/admin/customize/configs/general.php:85
+#: includes/admin/customize/configs/site-header.php:122
+#: includes/admin/customize/configs/site-header.php:368
+#: includes/admin/customize/configs/typography.php:406
+#: includes/admin/customize/configs/woocommerce.php:59
+#: includes/admin/customize/configs/woocommerce.php:236
+#: includes/admin/customize/configs/woocommerce.php:256
+#: includes/admin/metas/class-menu-fields.php:68
+#: includes/admin/metas/class-page-metas.php:158
+#: includes/admin/metas/class-page-metas.php:209
+#: includes/admin/metas/class-page-metas.php:313
+#: includes/admin/metas/class-post-metas.php:228
+msgid "Default"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:454
+#: includes/admin/customize/configs/default-page-title.php:94
+#: includes/admin/metas/class-page-metas.php:159
+msgid "Small"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:455
+#: includes/admin/customize/configs/default-page-title.php:95
+#: includes/admin/metas/class-page-metas.php:160
+msgid "Medium"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:456
+#: includes/admin/customize/configs/default-page-title.php:96
+#: includes/admin/metas/class-page-metas.php:161
+msgid "Large"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:457
+#: includes/admin/customize/configs/default-page-title.php:97
+#: includes/admin/metas/class-page-metas.php:162
+msgid "Screen Height"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:461
+#: includes/admin/customize/configs/default-page-title.php:101
+msgid "Default Background Color"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:466
+#: includes/admin/customize/configs/default-page-title.php:147
+msgid "Default Text Color"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:471
+msgid "Meta Items Color"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:479
+#: includes/admin/customize/configs/default-page-title.php:155
+msgid "Display Yoast SEO Breadcrumb"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:486
+msgid "Default Sidebar Layout"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:490
+msgid "No sidebar"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:491
+msgid "Left sidebar"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:492
+msgid "Right sidebar"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:497
+msgid "Header Meta"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:498
+msgid "Display selected meta in post header"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:505
+msgid "Post Footer Section"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:511
+msgid "Footer Meta"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:521
+msgid "Show Social Media Sharing Buttons"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:529
+msgid "Display Author Info Box"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:536
+msgid "Display Post Pagination"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:542
+msgid "Related Posts"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:549
+msgid "Display Related Posts"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:555
+msgid "Related Posts Title"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:556
+msgid "e.g. Other Posts You May Enjoy"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:563
+msgid "Pick Posts by"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:568
+#: includes/admin/customize/configs/blog.php:586
+msgid "Category"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:569
+msgid "Tag"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:570
+#: includes/admin/customize/configs/blog.php:585
+#: includes/admin/customize/configs/blog.php:610
+#: includes/front/class-walker-comment.php:65
+msgid "Author"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:587
+#: includes/admin/customize/configs/blog.php:612
+msgid "Publish Date"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:588
+#: includes/admin/customize/configs/blog.php:613
+msgid "Comment Counts"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:611
+msgid "Categories"
+msgstr ""
+
+#: includes/admin/customize/configs/blog.php:629
+msgid "Tags"
+msgstr ""
+
+#: includes/admin/customize/configs/colors-styles.php:40
+msgid "Colors & Styles"
+msgstr ""
+
+#: includes/admin/customize/configs/colors-styles.php:52
+msgid "General Colors"
+msgstr ""
+
+#: includes/admin/customize/configs/colors-styles.php:110
+msgid "Site Color Scheme"
+msgstr ""
+
+#: includes/admin/customize/configs/colors-styles.php:114
+#: includes/admin/customize/configs/general.php:554
+#: includes/admin/metas/class-menu-fields.php:69
+#: single-custom_blocks.php:22
+#: single-custom_site_headers.php:22
+msgid "Light"
+msgstr ""
+
+#: includes/admin/customize/configs/colors-styles.php:115
+#: includes/admin/customize/configs/general.php:555
+#: includes/admin/metas/class-menu-fields.php:70
+#: single-custom_blocks.php:19
+#: single-custom_site_headers.php:19
+msgid "Dark"
+msgstr ""
+
+#: includes/admin/customize/configs/colors-styles.php:119
+#: includes/admin/customize/configs/colors-styles.php:229
+#: includes/admin/customize/configs/colors-styles.php:245
+#: includes/admin/customize/configs/colors-styles.php:261
+#: includes/admin/customize/configs/colors-styles.php:277
+#: includes/admin/customize/configs/colors-styles.php:383
+#: includes/admin/customize/configs/colors-styles.php:404
+#: includes/admin/customize/configs/colors-styles.php:426
+#: includes/admin/customize/configs/colors-styles.php:530
+#: includes/admin/customize/configs/colors-styles.php:546
+#: includes/admin/customize/configs/typography.php:166
+msgid "Primary Color"
+msgstr ""
+
+#: includes/admin/customize/configs/colors-styles.php:124
+#: includes/admin/customize/configs/colors-styles.php:230
+#: includes/admin/customize/configs/colors-styles.php:246
+#: includes/admin/customize/configs/colors-styles.php:262
+#: includes/admin/customize/configs/colors-styles.php:278
+#: includes/admin/customize/configs/colors-styles.php:384
+#: includes/admin/customize/configs/colors-styles.php:405
+#: includes/admin/customize/configs/colors-styles.php:427
+#: includes/admin/customize/configs/colors-styles.php:531
+#: includes/admin/customize/configs/colors-styles.php:547
+#: includes/admin/customize/configs/typography.php:167
+msgid "Secondary Color"
+msgstr ""
+
+#: includes/admin/customize/configs/colors-styles.php:130
+msgid "Background & Text Colors"
+msgstr ""
+
+#: includes/admin/customize/configs/colors-styles.php:135
+msgid "Light Scheme Background Color"
+msgstr ""
+
+#: includes/admin/customize/configs/colors-styles.php:140
+msgid "Light Scheme Text Color"
+msgstr ""
+
+#: includes/admin/customize/configs/colors-styles.php:145
+msgid "Light Scheme Content Color"
+msgstr ""
+
+#: includes/admin/customize/configs/colors-styles.php:150
+msgid "Dark Scheme Background Color"
+msgstr ""
+
+#: includes/admin/customize/configs/colors-styles.php:155
+msgid "Dark Scheme Text Color"
+msgstr ""
+
+#: includes/admin/customize/configs/colors-styles.php:160
+msgid "Dark Scheme Content Color"
+msgstr ""
+
+#: includes/admin/customize/configs/colors-styles.php:173
+msgid "Links"
+msgstr ""
+
+#: includes/admin/customize/configs/colors-styles.php:225
+msgid "Regular - Light Scheme"
+msgstr ""
+
+#: includes/admin/customize/configs/colors-styles.php:231
+#: includes/admin/customize/configs/colors-styles.php:247
+#: includes/admin/customize/configs/colors-styles.php:263
+#: includes/admin/customize/configs/colors-styles.php:279
+#: includes/admin/customize/configs/colors-styles.php:385
+#: includes/admin/customize/configs/colors-styles.php:406
+#: includes/admin/customize/configs/colors-styles.php:428
+#: includes/admin/customize/configs/colors-styles.php:532
+#: includes/admin/customize/configs/colors-styles.php:548
+#: includes/admin/customize/configs/typography.php:168
+msgid "Custom Color"
+msgstr ""
+
+#: includes/admin/customize/configs/colors-styles.php:241
+msgid "Hover - Light Scheme"
+msgstr ""
+
+#: includes/admin/customize/configs/colors-styles.php:257
+msgid "Regular - Dark Scheme"
+msgstr ""
+
+#: includes/admin/customize/configs/colors-styles.php:273
+msgid "Hover - Dark Scheme"
+msgstr ""
+
+#: includes/admin/customize/configs/colors-styles.php:296
+msgid "Buttons"
+msgstr ""
+
+#: includes/admin/customize/configs/colors-styles.php:362
+msgid "Default Button Shape"
+msgstr ""
+
+#: includes/admin/customize/configs/colors-styles.php:366
+#: includes/admin/customize/configs/colors-styles.php:474
+msgid "Square"
+msgstr ""
+
+#: includes/admin/customize/configs/colors-styles.php:367
+#: includes/admin/customize/configs/colors-styles.php:475
+msgid "Rounded"
+msgstr ""
+
+#: includes/admin/customize/configs/colors-styles.php:368
+#: includes/admin/customize/configs/colors-styles.php:476
+msgid "Pill"
+msgstr ""
+
+#: includes/admin/customize/configs/colors-styles.php:373
+msgid "Default Button Colors"
+msgstr ""
+
+#: includes/admin/customize/configs/colors-styles.php:379
+#: includes/admin/customize/configs/general.php:199
+#: includes/admin/customize/configs/general.php:559
+#: includes/admin/customize/configs/site-footer.php:355
+#: includes/admin/customize/configs/site-header.php:335
+msgid "Background Color"
+msgstr ""
+
+#: includes/admin/customize/configs/colors-styles.php:395
+#: includes/admin/customize/configs/site-footer.php:360
+#: includes/admin/customize/configs/site-header.php:346
+msgid "Text Color"
+msgstr ""
+
+#: includes/admin/customize/configs/colors-styles.php:400
+#: includes/admin/customize/configs/general.php:217
+msgid "Hover Background Color"
+msgstr ""
+
+#: includes/admin/customize/configs/colors-styles.php:416
+msgid "Hover Text Color"
+msgstr ""
+
+#: includes/admin/customize/configs/colors-styles.php:421
+msgid "Underline Button Color"
+msgstr ""
+
+#: includes/admin/customize/configs/colors-styles.php:440
+msgid "When editing a button in Elementor, if you select \"Default\" for \"Button Color\", the button will use the colors you set here. These colors can be overwritten when editing each specific button."
+msgstr ""
+
+#: includes/admin/customize/configs/colors-styles.php:451
+msgid "Forms"
+msgstr ""
+
+#: includes/admin/customize/configs/colors-styles.php:469
+msgid "Form Field Style"
+msgstr ""
+
+#: includes/admin/customize/configs/colors-styles.php:473
+msgid "Underlined"
+msgstr ""
+
+#: includes/admin/customize/configs/colors-styles.php:481
+msgid "Border Width"
+msgstr ""
+
+#: includes/admin/customize/configs/colors-styles.php:496
+msgid "Others"
+msgstr ""
+
+#: includes/admin/customize/configs/colors-styles.php:526
+msgid "Blog & Post Meta Color"
+msgstr ""
+
+#: includes/admin/customize/configs/colors-styles.php:542
+msgid "Room Subtitle Color"
+msgstr ""
+
+#: includes/admin/customize/configs/default-page-title.php:17
+msgid "Page Title"
+msgstr ""
+
+#: includes/admin/customize/configs/default-page-title.php:84
+msgid "These settings control the default styles for all page title sections, including single pages, blog page & archive pages, and shop pages."
+msgstr ""
+
+#: includes/admin/customize/configs/default-page-title.php:90
+msgid "Section Size"
+msgstr ""
+
+#: includes/admin/customize/configs/default-page-title.php:107
+msgid "Default Background Image"
+msgstr ""
+
+#: includes/admin/customize/configs/default-page-title.php:112
+msgid "Image Position"
+msgstr ""
+
+#: includes/admin/customize/configs/default-page-title.php:122
+msgid "Size"
+msgstr ""
+
+#: includes/admin/customize/configs/default-page-title.php:127
+#: includes/admin/metas/class-page-metas.php:192
+msgid "Original"
+msgstr ""
+
+#: includes/admin/customize/configs/default-page-title.php:128
+#: includes/admin/customize/configs/site-header.php:369
+#: includes/admin/metas/class-page-metas.php:193
+#: includes/admin/metas/class-page-metas.php:314
+#: includes/admin/metas/class-post-metas.php:229
+msgid "Fit to Screen"
+msgstr ""
+
+#: includes/admin/customize/configs/default-page-title.php:129
+#: includes/admin/metas/class-page-metas.php:194
+msgid "Fill Screen"
+msgstr ""
+
+#: includes/admin/customize/configs/default-page-title.php:134
+msgid "Repeat"
+msgstr ""
+
+#: includes/admin/customize/configs/default-page-title.php:141
+msgid "Scroll with Page"
+msgstr ""
+
+#. translators: 1/2. html tag
+#: includes/admin/customize/configs/default-page-title.php:158
+msgid "To display Yoast SEO Breadcrumb on Single Posts, please go to %1$sBlog > Single Post%2$s  to enable it."
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:44
+msgid "General"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:56
+msgid "General Layouts"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:81
+msgid "Content Max Width"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:86
+#: includes/admin/customize/configs/site-header.php:123
+#: includes/admin/customize/configs/site-header.php:370
+#: includes/admin/customize/configs/woocommerce.php:237
+#: includes/admin/metas/class-page-metas.php:120
+#: includes/admin/metas/class-page-metas.php:229
+#: includes/admin/metas/class-page-metas.php:257
+#: includes/admin/metas/class-page-metas.php:283
+#: includes/admin/metas/class-page-metas.php:315
+#: includes/admin/metas/class-post-metas.php:98
+#: includes/admin/metas/class-post-metas.php:144
+#: includes/admin/metas/class-post-metas.php:172
+#: includes/admin/metas/class-post-metas.php:198
+#: includes/admin/metas/class-post-metas.php:230
+msgid "Custom"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:91
+#: includes/admin/customize/configs/general.php:541
+#: includes/admin/customize/configs/site-header.php:375
+#: includes/admin/metas/class-menu-fields.php:60
+msgid "Custom Width"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:100
+msgid "Site Background"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:133
+msgid "Back To Top"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:194
+msgid "Display The Back To Top button"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:205
+msgid "Border Color"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:211
+msgid "Icon Color"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:223
+msgid "Hover Border Color"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:229
+msgid "Hover Icon Color"
+msgstr ""
+
+#. translators: 1/2. html tag
+#: includes/admin/customize/configs/general.php:258
+msgid "To display Instagram feed, please add the Instagram Access Token to connect your website with your Instagram account. Please follow the instructions in our documentation %1$shere%2$s."
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:275
+msgid "Like"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:276
+msgid "Facebook"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:277
+msgid "Twitter"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:278
+msgid "LinkedIn"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:279
+msgid "Pinterest"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:280
+msgid "Whats App"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:283
+msgid "Social Share Buttons"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:299
+msgid "Social Icons"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:314
+msgid "404 Page"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:327
+msgid "Set a Custom 404 Page"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:341
+msgid "Cookie Law"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:373
+msgid "Display Cookie Notice"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:379
+msgid "Message"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:386
+msgid "Accept Button Text"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:393
+msgid "Cookies version"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:394
+msgid "If you change your cookie policy information you can increase their version to show the popup to all visitors again."
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:411
+msgid "Popup Box"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:488
+msgid "Enable The Popup Box"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:495
+msgid "Show It Only Once Per Session"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:502
+msgid "Select Content Inside The Popup Box"
+msgstr ""
+
+#. translators: 1/2. html tag
+#: includes/admin/customize/configs/general.php:509
+#: includes/admin/customize/configs/site-footer.php:146
+#: includes/admin/customize/configs/site-header.php:306
+#: includes/admin/customize/configs/woocommerce.php:249
+msgid "If there is no option in the dropdown list, please click %1$shere%2$s to create your own custom blocks first."
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:516
+msgid "Display"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:521
+msgid "Immediately"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:522
+msgid "After 5 seconds"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:523
+msgid "After 10 seconds"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:524
+msgid "After 15 seconds"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:525
+msgid "After 20 seconds"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:530
+msgid "Box Size"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:535
+msgid "Fullscreen"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:536
+#: includes/admin/metas/class-menu-fields.php:54
+msgid "Custom Width x Auto Height"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:549
+msgid "Color Scheme"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:566
+#: includes/admin/customize/configs/site-header.php:341
+msgid "Background Image"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:573
+msgid "Responsive"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:578
+msgid "Show on all devices"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:579
+msgid "Hide on Mobile"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:580
+msgid "Hide on Desktop"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:593
+#: searchform.php:8
+#: template-parts/defaults/site-header.php:30
+msgid "Search"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:605
+msgid "Post Types to Search"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:618
+msgid "Anchors In the Nav Menu"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:631
+msgid "Solve Multiple Highlighting in Nav Menu"
+msgstr ""
+
+#: includes/admin/customize/configs/general.php:632
+msgid "Please enable this option if your nav menu contains multiple anchors."
+msgstr ""
+
+#: includes/admin/customize/configs/rooms.php:45
+msgid "Rooms"
+msgstr ""
+
+#: includes/admin/customize/configs/rooms.php:57
+msgid "Room List"
+msgstr ""
+
+#: includes/admin/customize/configs/rooms.php:82
+msgid "Search / Booking Form"
+msgstr ""
+
+#: includes/admin/customize/configs/rooms.php:145
+msgid "Dropdown Background"
+msgstr ""
+
+#: includes/admin/customize/configs/rooms.php:150
+msgid "Dropdown Text Color"
+msgstr ""
+
+#: includes/admin/customize/configs/rooms.php:155
+msgid "Dropdown Border Color"
+msgstr ""
+
+#: includes/admin/customize/configs/rooms.php:162
+#: includes/admin/customize/configs/rooms.php:279
+msgid "Calendar Colors"
+msgstr ""
+
+#: includes/admin/customize/configs/rooms.php:167
+msgid "Date Border Color"
+msgstr ""
+
+#: includes/admin/customize/configs/rooms.php:172
+msgid "Available Date Background"
+msgstr ""
+
+#: includes/admin/customize/configs/rooms.php:177
+#: includes/admin/customize/configs/rooms.php:284
+msgid "Start / End Date Background"
+msgstr ""
+
+#: includes/admin/customize/configs/rooms.php:182
+#: includes/admin/customize/configs/rooms.php:289
+msgid "Start / End Date Text Color"
+msgstr ""
+
+#: includes/admin/customize/configs/rooms.php:187
+#: includes/admin/customize/configs/rooms.php:294
+msgid "In Range Date Background"
+msgstr ""
+
+#: includes/admin/customize/configs/rooms.php:192
+#: includes/admin/customize/configs/rooms.php:299
+msgid "In Range Date Text Color"
+msgstr ""
+
+#: includes/admin/customize/configs/rooms.php:197
+#: includes/admin/customize/configs/rooms.php:304
+msgid "Hover Highlight"
+msgstr ""
+
+#: includes/admin/customize/configs/rooms.php:210
+msgid "Availability Calendar"
+msgstr ""
+
+#: includes/admin/customize/configs/rooms.php:264
+msgid "Display the Availability Calendar on single room pages"
+msgstr ""
+
+#: includes/admin/customize/configs/rooms.php:271
+msgid "Availability Section Title"
+msgstr ""
+
+#: includes/admin/customize/configs/rooms.php:317
+msgid "Booking Form Items"
+msgstr ""
+
+#: includes/admin/customize/configs/rooms.php:341
+msgid "Hide \"Rooms\""
+msgstr ""
+
+#: includes/admin/customize/configs/rooms.php:348
+msgid "Hide \"Adults\""
+msgstr ""
+
+#: includes/admin/customize/configs/rooms.php:355
+msgid "Hide \"Children\""
+msgstr ""
+
+#: includes/admin/customize/configs/site-footer.php:49
+#: includes/admin/metas/class-page-metas.php:220
+#: includes/admin/metas/class-post-metas.php:135
+msgid "Site Footer"
+msgstr ""
+
+#: includes/admin/customize/configs/site-footer.php:61
+msgid "Footer Main"
+msgstr ""
+
+#: includes/admin/customize/configs/site-footer.php:75
+msgid "Select Footer"
+msgstr ""
+
+#. translators: 1/2. html tag
+#: includes/admin/customize/configs/site-footer.php:81
+msgid "Select your default footer for your website from the list. If there is no option in the dropdown list, please click %1$shere%2$s to create your own custom blocks first."
+msgstr ""
+
+#: includes/admin/customize/configs/site-footer.php:97
+msgid "Before Footer"
+msgstr ""
+
+#: includes/admin/customize/configs/site-footer.php:122
+msgid "Content Source"
+msgstr ""
+
+#: includes/admin/customize/configs/site-footer.php:126
+#: includes/admin/customize/configs/typography.php:65
+msgid "Text"
+msgstr ""
+
+#: includes/admin/customize/configs/site-footer.php:127
+msgid "Custom Block"
+msgstr ""
+
+#: includes/admin/customize/configs/site-footer.php:162
+msgid "Instagram"
+msgstr ""
+
+#: includes/admin/customize/configs/site-footer.php:225
+msgid "Display Instagram Feed"
+msgstr ""
+
+#: includes/admin/customize/configs/site-footer.php:233
+msgid "Select a Feed"
+msgstr ""
+
+#. translators: 1. html tag start 2. html tag end
+#: includes/admin/customize/configs/site-footer.php:247
+msgid "Click %1$shere%2$s to know how to set up and configure your Instagram account."
+msgstr ""
+
+#: includes/admin/customize/configs/site-footer.php:255
+#: includes/admin/customize/configs/site-footer.php:260
+msgid "Title (optional)"
+msgstr ""
+
+#: includes/admin/customize/configs/site-footer.php:265
+msgid "Title Link"
+msgstr ""
+
+#: includes/admin/customize/configs/site-footer.php:271
+msgid "Instagram Title Link"
+msgstr ""
+
+#: includes/admin/customize/configs/site-footer.php:276
+msgid "Photos Layout"
+msgstr ""
+
+#: includes/admin/customize/configs/site-footer.php:281
+msgid "4 Columns"
+msgstr ""
+
+#: includes/admin/customize/configs/site-footer.php:282
+msgid "5 Columns"
+msgstr ""
+
+#: includes/admin/customize/configs/site-footer.php:283
+msgid "6 Columns"
+msgstr ""
+
+#: includes/admin/customize/configs/site-footer.php:284
+msgid "7 Columns"
+msgstr ""
+
+#: includes/admin/customize/configs/site-footer.php:285
+msgid "8 Columns"
+msgstr ""
+
+#: includes/admin/customize/configs/site-footer.php:291
+msgid "Open links in new tab"
+msgstr ""
+
+#: includes/admin/customize/configs/site-footer.php:306
+msgid "Footer Bottom"
+msgstr ""
+
+#: includes/admin/customize/configs/site-footer.php:340
+msgid "Layout"
+msgstr ""
+
+#: includes/admin/customize/configs/site-footer.php:344
+msgid "1 Column"
+msgstr ""
+
+#: includes/admin/customize/configs/site-footer.php:345
+msgid "2 Columns"
+msgstr ""
+
+#: includes/admin/customize/configs/site-footer.php:350
+msgid "Footer Text"
+msgstr ""
+
+#: includes/admin/customize/configs/site-footer.php:368
+msgid "Hide Footer Bottom"
+msgstr ""
+
+#: includes/admin/customize/configs/site-header.php:39
+#: includes/admin/customize/configs/site-header.php:118
+#: includes/admin/metas/class-page-metas.php:111
+#: includes/admin/metas/class-post-metas.php:89
+msgid "Site Header"
+msgstr ""
+
+#: includes/admin/customize/configs/site-header.php:52
+msgid "Header"
+msgstr ""
+
+#: includes/admin/customize/configs/site-header.php:105
+msgid "Sticky Header"
+msgstr ""
+
+#: includes/admin/customize/configs/site-header.php:109
+msgid "No"
+msgstr ""
+
+#: includes/admin/customize/configs/site-header.php:110
+msgid "Always sticky"
+msgstr ""
+
+#: includes/admin/customize/configs/site-header.php:111
+msgid "Sticky when scroll up"
+msgstr ""
+
+#: includes/admin/customize/configs/site-header.php:129
+#: includes/admin/customize/configs/site-header.php:178
+msgid "Enable Overlap Header"
+msgstr ""
+
+#: includes/admin/customize/configs/site-header.php:137
+#: includes/admin/customize/configs/site-header.php:192
+msgid "Hide Search Icon"
+msgstr ""
+
+#: includes/admin/customize/configs/site-header.php:145
+#: includes/admin/customize/configs/site-header.php:199
+msgid "Hide Mini Cart"
+msgstr ""
+
+#: includes/admin/customize/configs/site-header.php:153
+msgid "Select a Custom Site Header"
+msgstr ""
+
+#. translators: 1/2. html tag
+#: includes/admin/customize/configs/site-header.php:160
+#: includes/admin/metas/class-page-metas.php:133
+#: includes/admin/metas/class-post-metas.php:111
+msgid "If there is no option in the dropdown list, please click %1$shere%2$s to create your own site header first."
+msgstr ""
+
+#: includes/admin/customize/configs/site-header.php:167
+msgid "Select Sticky Header"
+msgstr ""
+
+#: includes/admin/customize/configs/site-header.php:172
+#: includes/admin/metas/class-post-metas.php:125
+msgid "You can choose another custom site header as the sticky header"
+msgstr ""
+
+#: includes/admin/customize/configs/site-header.php:185
+msgid "Hide Top Bar"
+msgstr ""
+
+#: includes/admin/customize/configs/site-header.php:213
+#: includes/admin/metas/class-page-metas.php:278
+#: includes/admin/metas/class-post-metas.php:193
+msgid "Fullscreen/Mobile Menu"
+msgstr ""
+
+#: includes/admin/customize/configs/site-header.php:294
+msgid "Click the hamburger menu button to preview."
+msgstr ""
+
+#: includes/admin/customize/configs/site-header.php:300
+msgid "Select Fullscreen/Mobile Menu"
+msgstr ""
+
+#: includes/admin/customize/configs/site-header.php:313
+#: includes/admin/customize/configs/site-header.php:329
+msgid "Copyright Text"
+msgstr ""
+
+#: includes/admin/customize/configs/site-header.php:321
+msgid "Hide Default Close Button"
+msgstr ""
+
+#: includes/admin/customize/configs/site-header.php:353
+msgid "Entrance Animation"
+msgstr ""
+
+#: includes/admin/customize/configs/site-header.php:357
+#: includes/admin/metas/class-page-metas.php:305
+#: includes/admin/metas/class-post-metas.php:220
+msgid "Slide From Right"
+msgstr ""
+
+#: includes/admin/customize/configs/site-header.php:358
+#: includes/admin/metas/class-page-metas.php:306
+#: includes/admin/metas/class-post-metas.php:221
+msgid "Slide From Left"
+msgstr ""
+
+#: includes/admin/customize/configs/site-header.php:359
+#: includes/admin/metas/class-page-metas.php:307
+#: includes/admin/metas/class-post-metas.php:222
+msgid "Fade In"
+msgstr ""
+
+#: includes/admin/customize/configs/site-header.php:364
+msgid "Width"
+msgstr ""
+
+#: includes/admin/customize/configs/site-header.php:376
+msgid "px"
+msgstr ""
+
+#: includes/admin/customize/configs/site-identity.php:36
+msgid "Logo Width"
+msgstr ""
+
+#: includes/admin/customize/configs/typography.php:45
+msgid "Typography"
+msgstr ""
+
+#: includes/admin/customize/configs/typography.php:56
+msgid "Heading"
+msgstr ""
+
+#: includes/admin/customize/configs/typography.php:57
+msgid "These settings control the typography for all heading text."
+msgstr ""
+
+#: includes/admin/customize/configs/typography.php:61
+msgid "Subheading"
+msgstr ""
+
+#: includes/admin/customize/configs/typography.php:66
+msgid "These settings control the typography for all body text."
+msgstr ""
+
+#: includes/admin/customize/configs/typography.php:71
+msgid "These settings control the typography for Blog (Posts)."
+msgstr ""
+
+#: includes/admin/customize/configs/typography.php:74
+msgid "Blog Title"
+msgstr ""
+
+#: includes/admin/customize/configs/typography.php:78
+msgid "Post Content"
+msgstr ""
+
+#: includes/admin/customize/configs/typography.php:84
+msgid "Secondary"
+msgstr ""
+
+#: includes/admin/customize/configs/typography.php:85
+msgid "These settings control the typography for all general secondary text: post meta, breadcrumbs, shop labels, paginations, etc"
+msgstr ""
+
+#: includes/admin/customize/configs/typography.php:89
+msgid "Widget Title"
+msgstr ""
+
+#: includes/admin/customize/configs/typography.php:93
+msgid "Button Text"
+msgstr ""
+
+#: includes/admin/customize/configs/typography.php:162
+msgid "Default Color"
+msgstr ""
+
+#: includes/admin/customize/configs/typography.php:187
+msgid "Menus"
+msgstr ""
+
+#: includes/admin/customize/configs/typography.php:200
+msgid "These settings control the typography for all site navigation menus."
+msgstr ""
+
+#: includes/admin/customize/configs/typography.php:212
+#: includes/class-wp-core.php:112
+msgid "Footer Bottom Menu"
+msgstr ""
+
+#: includes/admin/customize/configs/typography.php:252
+msgid "Font Family"
+msgstr ""
+
+#: includes/admin/customize/configs/typography.php:289
+msgid "Font Size"
+msgstr ""
+
+#: includes/admin/customize/configs/typography.php:309
+msgid "Font Weight"
+msgstr ""
+
+#: includes/admin/customize/configs/typography.php:310
+msgid "Please note: not every font supports all the font weight values listed."
+msgstr ""
+
+#: includes/admin/customize/configs/typography.php:338
+msgid "Text Transform"
+msgstr ""
+
+#: includes/admin/customize/configs/typography.php:342
+msgid "None"
+msgstr ""
+
+#: includes/admin/customize/configs/typography.php:343
+msgid "Uppercase"
+msgstr ""
+
+#: includes/admin/customize/configs/typography.php:344
+msgid "Lowercase"
+msgstr ""
+
+#: includes/admin/customize/configs/typography.php:345
+msgid "Capitalize"
+msgstr ""
+
+#: includes/admin/customize/configs/typography.php:362
+msgid "Font Style"
+msgstr ""
+
+#: includes/admin/customize/configs/typography.php:366
+msgid "Normal"
+msgstr ""
+
+#: includes/admin/customize/configs/typography.php:367
+msgid "Italic"
+msgstr ""
+
+#: includes/admin/customize/configs/typography.php:384
+msgid "Line Height"
+msgstr ""
+
+#: includes/admin/customize/configs/typography.php:402
+msgid "Letter Spacing"
+msgstr ""
+
+#: includes/admin/customize/configs/woocommerce.php:55
+msgid "Style"
+msgstr ""
+
+#: includes/admin/customize/configs/woocommerce.php:60
+#: includes/admin/customize/configs/woocommerce.php:65
+msgid "Food Menu Style"
+msgstr ""
+
+#: includes/admin/customize/configs/woocommerce.php:70
+msgid "Style 1"
+msgstr ""
+
+#: includes/admin/customize/configs/woocommerce.php:71
+msgid "Style 2"
+msgstr ""
+
+#: includes/admin/customize/configs/woocommerce.php:72
+msgid "Style 3"
+msgstr ""
+
+#: includes/admin/customize/configs/woocommerce.php:73
+msgid "Style 4"
+msgstr ""
+
+#: includes/admin/customize/configs/woocommerce.php:74
+msgid "Style 5"
+msgstr ""
+
+#: includes/admin/customize/configs/woocommerce.php:75
+msgid "Style 6"
+msgstr ""
+
+#: includes/admin/customize/configs/woocommerce.php:81
+msgid "Show Short Description"
+msgstr ""
+
+#: includes/admin/customize/configs/woocommerce.php:87
+msgid "Short Description Length"
+msgstr ""
+
+#: includes/admin/customize/configs/woocommerce.php:102
+msgid "Breadcrumbs"
+msgstr ""
+
+#: includes/admin/customize/configs/woocommerce.php:122
+msgid "Show Breadcrumbs on WooCommerce Related Pages"
+msgstr ""
+
+#: includes/admin/customize/configs/woocommerce.php:131
+msgid "Show Yoast SEO Breadcrumbs Instead of WooCoomerce's"
+msgstr ""
+
+#: includes/admin/customize/configs/woocommerce.php:164
+msgid "Archive Page Sidebar Layout"
+msgstr ""
+
+#: includes/admin/customize/configs/woocommerce.php:175
+msgid "Single Product Sidebar Layout"
+msgstr ""
+
+#: includes/admin/customize/configs/woocommerce.php:193
+msgid "CS Extra"
+msgstr ""
+
+#: includes/admin/customize/configs/woocommerce.php:226
+msgid "Hide Single Product Page Title Section"
+msgstr ""
+
+#: includes/admin/customize/configs/woocommerce.php:232
+msgid "Single Product Page Site Header"
+msgstr ""
+
+#: includes/admin/customize/configs/woocommerce.php:242
+msgid "Select a Custom Site Header for Single Product Page"
+msgstr ""
+
+#: includes/admin/customize/configs/woocommerce.php:262
+msgid "\"Return to shop\" Button URL"
+msgstr ""
+
+#: includes/admin/metas/class-menu-fields.php:32
+msgid "Custom fields [for theme]"
+msgstr ""
+
+#: includes/admin/metas/class-menu-fields.php:35
+msgid "Dropdown Displays a Mega Menu"
+msgstr ""
+
+#: includes/admin/metas/class-menu-fields.php:41
+msgid "Select a Mega Menu"
+msgstr ""
+
+#: includes/admin/metas/class-menu-fields.php:51
+msgid "Dropdown Size"
+msgstr ""
+
+#: includes/admin/metas/class-menu-fields.php:53
+msgid "Fullwidth"
+msgstr ""
+
+#: includes/admin/metas/class-menu-fields.php:66
+msgid "Dropdown Color Scheme"
+msgstr ""
+
+#: includes/admin/metas/class-page-metas.php:44
+msgid "CozyStay Single Page Options"
+msgstr ""
+
+#: includes/admin/metas/class-page-metas.php:113
+#: includes/admin/metas/class-post-metas.php:91
+msgid "Hide Site Header:"
+msgstr ""
+
+#: includes/admin/metas/class-page-metas.php:117
+#: includes/admin/metas/class-post-metas.php:95
+msgid "Site Header Source:"
+msgstr ""
+
+#: includes/admin/metas/class-page-metas.php:119
+#: includes/admin/metas/class-page-metas.php:228
+#: includes/admin/metas/class-page-metas.php:256
+#: includes/admin/metas/class-page-metas.php:282
+#: includes/admin/metas/class-post-metas.php:97
+#: includes/admin/metas/class-post-metas.php:143
+#: includes/admin/metas/class-post-metas.php:171
+#: includes/admin/metas/class-post-metas.php:197
+msgid "Inherit"
+msgstr ""
+
+#: includes/admin/metas/class-page-metas.php:124
+#: includes/admin/metas/class-post-metas.php:102
+msgid "Select a Custom Site Header:"
+msgstr ""
+
+#: includes/admin/metas/class-page-metas.php:141
+#: includes/admin/metas/class-post-metas.php:119
+msgid "Select a Custom Sticky Site Header:"
+msgstr ""
+
+#: includes/admin/metas/class-page-metas.php:147
+msgid "You can choose another custom site header as the sticky header."
+msgstr ""
+
+#: includes/admin/metas/class-page-metas.php:150
+#: includes/admin/metas/class-post-metas.php:129
+msgid "Page Title Section"
+msgstr ""
+
+#: includes/admin/metas/class-page-metas.php:152
+#: includes/admin/metas/class-post-metas.php:131
+msgid "Hide Page Title Section:"
+msgstr ""
+
+#: includes/admin/metas/class-page-metas.php:156
+msgid "Page Title Section Size:"
+msgstr ""
+
+#: includes/admin/metas/class-page-metas.php:166
+msgid "Background Color:"
+msgstr ""
+
+#: includes/admin/metas/class-page-metas.php:170
+msgid "Background Image:"
+msgstr ""
+
+#: includes/admin/metas/class-page-metas.php:171
+msgid "Upload a featured image and it will be used as the background image of page title section."
+msgstr ""
+
+#: includes/admin/metas/class-page-metas.php:174
+msgid "Background Position X:"
+msgstr ""
+
+#: includes/admin/metas/class-page-metas.php:176
+msgid "Left"
+msgstr ""
+
+#: includes/admin/metas/class-page-metas.php:177
+#: includes/admin/metas/class-page-metas.php:185
+msgid "Center"
+msgstr ""
+
+#: includes/admin/metas/class-page-metas.php:178
+msgid "Right"
+msgstr ""
+
+#: includes/admin/metas/class-page-metas.php:182
+msgid "Background Position Y:"
+msgstr ""
+
+#: includes/admin/metas/class-page-metas.php:184
+msgid "Top"
+msgstr ""
+
+#: includes/admin/metas/class-page-metas.php:186
+msgid "Bottom"
+msgstr ""
+
+#: includes/admin/metas/class-page-metas.php:190
+msgid "Background Size:"
+msgstr ""
+
+#: includes/admin/metas/class-page-metas.php:198
+msgid "Background Repeat:"
+msgstr ""
+
+#: includes/admin/metas/class-page-metas.php:202
+msgid "Background Image Scroll with Page:"
+msgstr ""
+
+#: includes/admin/metas/class-page-metas.php:207
+msgid "Display Breadcrumb:"
+msgstr ""
+
+#: includes/admin/metas/class-page-metas.php:210
+msgid "Show"
+msgstr ""
+
+#: includes/admin/metas/class-page-metas.php:211
+msgid "Hide"
+msgstr ""
+
+#: includes/admin/metas/class-page-metas.php:216
+msgid "Text Color:"
+msgstr ""
+
+#: includes/admin/metas/class-page-metas.php:222
+#: includes/admin/metas/class-post-metas.php:137
+msgid "Hide Site Footer Main:"
+msgstr ""
+
+#: includes/admin/metas/class-page-metas.php:226
+#: includes/admin/metas/class-post-metas.php:141
+msgid "Site Footer Main Source:"
+msgstr ""
+
+#: includes/admin/metas/class-page-metas.php:233
+#: includes/admin/metas/class-post-metas.php:148
+msgid "Select a Custom Site Footer Main:"
+msgstr ""
+
+#. translators: 1/2. html tag
+#: includes/admin/metas/class-page-metas.php:242
+#: includes/admin/metas/class-post-metas.php:157
+msgid "If there is no option in the dropdown list, please click %1$shere%2$s to create your own custom site footer main first."
+msgstr ""
+
+#: includes/admin/metas/class-page-metas.php:250
+#: includes/admin/metas/class-post-metas.php:165
+msgid "Hide Before Footer:"
+msgstr ""
+
+#: includes/admin/metas/class-page-metas.php:254
+#: includes/admin/metas/class-post-metas.php:169
+msgid "Before Footer Source:"
+msgstr ""
+
+#: includes/admin/metas/class-page-metas.php:261
+#: includes/admin/metas/class-post-metas.php:176
+msgid "Select a Custom Before Footer:"
+msgstr ""
+
+#: includes/admin/metas/class-page-metas.php:270
+#: includes/admin/metas/class-post-metas.php:185
+msgid "Hide Instagram:"
+msgstr ""
+
+#: includes/admin/metas/class-page-metas.php:274
+#: includes/admin/metas/class-post-metas.php:189
+msgid "Hide Footer Bottom:"
+msgstr ""
+
+#: includes/admin/metas/class-page-metas.php:280
+#: includes/admin/metas/class-post-metas.php:195
+msgid "Fullscreen/Mobile Menu Source:"
+msgstr ""
+
+#: includes/admin/metas/class-page-metas.php:287
+#: includes/admin/metas/class-post-metas.php:202
+msgid "Select a Custom Fullscreen/Mobile Menu:"
+msgstr ""
+
+#. translators: 1/2. html tag
+#: includes/admin/metas/class-page-metas.php:296
+#: includes/admin/metas/class-post-metas.php:211
+msgid "If there is no option in the dropdown list, please click %1$shere%2$s to create your own custom mobile menu first."
+msgstr ""
+
+#: includes/admin/metas/class-page-metas.php:303
+#: includes/admin/metas/class-post-metas.php:218
+msgid "Entrance Animation:"
+msgstr ""
+
+#: includes/admin/metas/class-page-metas.php:311
+#: includes/admin/metas/class-post-metas.php:226
+msgid "Width:"
+msgstr ""
+
+#: includes/admin/metas/class-page-metas.php:319
+#: includes/admin/metas/class-post-metas.php:234
+msgid "Custom Width:"
+msgstr ""
+
+#: includes/admin/metas/class-post-metas.php:41
+msgid "CozyStay Single Post Options"
+msgstr ""
+
+#: includes/admin/metas/class-post-metas.php:238
+msgid "Post Template"
+msgstr ""
+
+#: includes/admin/metas/class-post-metas.php:240
+msgid "Post Template:"
+msgstr ""
+
+#: includes/admin/metas/class-post-metas.php:242
+msgid "Default ( inherit from Customize > Blog > Single Post > Default Sidebar Layout )"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-custom-font.php:9
+#: includes/admin/options/theme-settings/class-custom-font.php:56
+#: includes/admin/options/theme-settings/class-theme-settings.php:74
+msgid "Custom Font"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-custom-font.php:20
+#: includes/class-theme-core-filters.php:410
+#: includes/functions.php:425
+msgid "Adobe Fonts"
+msgstr ""
+
+#. translators: 1/2 html tag
+#: includes/admin/options/theme-settings/class-custom-font.php:23
+msgid "Please check %1$sthis tutorial%2$s for details about how to add Adobe Fonts on your website."
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-custom-font.php:30
+msgid "Adobe Project (TypeKit) ID:"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-custom-font.php:33
+#: includes/admin/options/theme-settings/class-custom-font.php:123
+msgid "Sync"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-custom-font.php:34
+msgid "Clear"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-custom-font.php:41
+#: includes/class-theme-core-filters.php:411
+#: includes/functions.php:432
+msgid "Custom Fonts"
+msgstr ""
+
+#. translators: 1/2 html tag
+#: includes/admin/options/theme-settings/class-custom-font.php:44
+msgid "Please check %1$sthis tutorial%2$s for details about how to add Custom Fonts on your website."
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-custom-font.php:50
+msgid "Add Font"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-custom-font.php:57
+#: includes/admin/options/theme-settings/class-custom-font.php:84
+#: includes/admin/options/theme-settings/class-custom-font.php:90
+#: includes/importer/class-templates.php:78
+msgid "Remove"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-custom-font.php:61
+msgid "Font Name:"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-custom-font.php:65
+msgid "Font Weight:"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-custom-font.php:67
+msgid "Variable Fonts"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-custom-font.php:68
+msgid "Ultra-Light 100"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-custom-font.php:69
+msgid "Light 200"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-custom-font.php:70
+msgid "Book 300"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-custom-font.php:71
+msgid "Normal 400"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-custom-font.php:72
+msgid "Medium 500"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-custom-font.php:73
+msgid "Semi-Bold 600"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-custom-font.php:74
+msgid "Bold 700"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-custom-font.php:75
+msgid "Extra-Bold 800"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-custom-font.php:81
+msgid "Font (.woff):"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-custom-font.php:83
+#: includes/admin/options/theme-settings/class-custom-font.php:89
+msgid "Upload"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-custom-font.php:87
+msgid "Font (.woff2):"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-custom-font.php:122
+msgid "Syncing"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-custom-font.php:124
+msgid "Please try again later."
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-custom-font.php:125
+#: includes/utils/class-rest-api.php:54
+msgid "Adobe Typekit ID can' be empty."
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-doc-support.php:8
+#: includes/admin/options/theme-settings/class-theme-settings.php:79
+msgid "Docs & Support"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-doc-support.php:15
+msgid "Theme Support"
+msgstr ""
+
+#. translators: %1$s: html tag start. %2$s: html tag end
+#: includes/admin/options/theme-settings/class-doc-support.php:18
+msgid "CozyStay theme comes with 6 months of free support for every license you purchase. Support can be extended through subscription via ThemeForest (%1$smore information on support extension%2$s)."
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-doc-support.php:24
+#: includes/admin/options/theme-settings/class-doc-support.php:26
+#: includes/admin/options/theme-settings/class-theme-settings.php:162
+msgid "Documentation"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-doc-support.php:25
+msgid "If you have any problems or questions while using this theme, please check our online documentation first. Your question may have been answered in the documentation."
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-doc-support.php:29
+msgid "F.A.Q"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-doc-support.php:30
+msgid "To make it easier and faster for you to find answers to your questions, we have made a list of frequently asked questions about using WordPress and this theme."
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-doc-support.php:31
+msgid "Check FAQs"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-doc-support.php:35
+#: includes/admin/options/theme-settings/class-doc-support.php:42
+msgid "Submit a Ticket"
+msgstr ""
+
+#. translators: %1$s: html tag start. %2$s: html tag end
+#: includes/admin/options/theme-settings/class-doc-support.php:38
+msgid "If you cannot find answers to your questions in the documentation and the FAQs, please submit a support request at Loft.Ocean Support Center (please follow %1$sthis guide%2$s)."
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-integrations.php:20
+#: includes/admin/options/theme-settings/class-theme-settings.php:77
+msgid "Integrations"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-integrations.php:34
+msgid "MC4WP Multilingual Manager for Polylang"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-integrations.php:37
+msgid "Setup your polylang first."
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-integrations.php:40
+msgid "Create your form first."
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-integrations.php:45
+msgid "Set form for default langauage"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-integrations.php:54
+msgid "Choose a form: "
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-integrations.php:64
+msgid "Or translate the form"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-integrations.php:67
+msgid "Edit the form"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-require-plugins.php:9
+#: includes/admin/options/theme-settings/class-theme-settings.php:73
+msgid "Required Plugins"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-require-plugins.php:27
+#: includes/admin/plugins/tgm-plugin-activation-config.php:77
+msgid "CozyStay Core"
+msgstr ""
+
+#. translators: 1 & 2. html tag <strong>
+#: includes/admin/options/theme-settings/class-require-plugins.php:31
+msgid "Please make sure you have installed and activated the required plugin %1$s\"CozyStay Core\"%2$s to get the full functionalities of the theme."
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-require-plugins.php:36
+#: includes/admin/plugins/class-tgm-plugin-activation.php:325
+msgid "Install Plugins"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-require-plugins.php:45
+msgid "Auto update the plugin when updating the theme"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-require-plugins.php:51
+msgid "Auto activate the plugin when activating the theme"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-require-plugins.php:56
+msgid "When should I enable the auto options above?"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-restaurant-info.php:9
+#: includes/admin/options/theme-settings/class-restaurant-info.php:55
+msgid "Restaurant Info"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-restaurant-info.php:31
+msgid "Address"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-restaurant-info.php:33
+msgid "e.g. 121 King St, Melbourne VIC 3000, Australia"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-restaurant-info.php:37
+msgid "Map URL"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-restaurant-info.php:39
+msgid "e.g. the URL from Google Map search results"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-restaurant-info.php:43
+msgid "Telephone"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-restaurant-info.php:45
+msgid "e.g. +61383766284"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-restaurant-info.php:49
+msgid "Email"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-restaurant-info.php:51
+msgid "e.g. booking@cs-wp.com"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-restaurant-info.php:56
+msgid "Enter some basic information of your restaurant."
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-restaurant-info.php:70
+msgid "Opening Hours"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-restaurant-info.php:71
+msgid "Enter the opening hours of your restaurant here. And then these information can be easily added to page content, sidebar, and footer."
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-restaurant-info.php:76
+msgid "Title"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-restaurant-info.php:77
+#: includes/class-theme-core-filters.php:331
+msgid "Hours"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-restaurant-info.php:85
+msgid "e.g. Monday - Friday"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-restaurant-info.php:88
+msgid "e.g. 09:00 - 22:00"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-restaurant-info.php:91
+msgid "Add a line"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-restaurant-info.php:92
+msgid "Delete"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-theme-settings.php:80
+msgid "Dashboard"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-theme-settings.php:111
+msgid "Save Changes"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-theme-settings.php:157
+msgid "theme-icon"
+msgstr ""
+
+#: includes/admin/options/theme-settings/class-theme-settings.php:163
+msgid "Get Support"
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:324
+msgid "Install Required Plugins"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: includes/admin/plugins/class-tgm-plugin-activation.php:327
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: includes/admin/plugins/class-tgm-plugin-activation.php:329
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:330
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#. translators: 1: plugin name(s).
+#: includes/admin/plugins/class-tgm-plugin-activation.php:332
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: includes/admin/plugins/class-tgm-plugin-activation.php:338
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: includes/admin/plugins/class-tgm-plugin-activation.php:344
+msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
+msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: includes/admin/plugins/class-tgm-plugin-activation.php:350
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: includes/admin/plugins/class-tgm-plugin-activation.php:356
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: includes/admin/plugins/class-tgm-plugin-activation.php:362
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:367
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:372
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:377
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:382
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:383
+#: includes/admin/plugins/class-tgm-plugin-activation.php:818
+#: includes/admin/plugins/class-tgm-plugin-activation.php:2525
+#: includes/admin/plugins/class-tgm-plugin-activation.php:3549
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:384
+#: includes/admin/plugins/class-tgm-plugin-activation.php:3152
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:385
+#: includes/admin/plugins/class-tgm-plugin-activation.php:2945
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name.
+#: includes/admin/plugins/class-tgm-plugin-activation.php:387
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: includes/admin/plugins/class-tgm-plugin-activation.php:389
+msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
+msgstr ""
+
+#. translators: 1: dashboard link.
+#: includes/admin/plugins/class-tgm-plugin-activation.php:391
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:392
+msgid "Dismiss this notice"
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:393
+msgid "There are one or more required or recommended plugins to install, update or activate."
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:394
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:513
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:514
+msgid "Update Required"
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:925
+msgid "The remote plugin package does not contain a folder with the desired slug and renaming did not work."
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:925
+#: includes/admin/plugins/class-tgm-plugin-activation.php:928
+msgid "Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines."
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:928
+msgid "The remote plugin package consists of more than one file, but the files are not packaged in a folder."
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:1112
+#: includes/admin/plugins/class-tgm-plugin-activation.php:2941
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#. translators: %s: version number
+#: includes/admin/plugins/class-tgm-plugin-activation.php:1973
+msgid "TGMPA v%s"
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:2265
+msgid "Required"
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:2268
+msgid "Recommended"
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:2284
+msgid "WordPress Repository"
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:2287
+msgid "External Source"
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:2290
+msgid "Pre-Packaged"
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:2307
+msgid "Not Installed"
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:2311
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:2313
+msgid "Active"
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:2319
+msgid "Required Update not Available"
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:2322
+msgid "Requires Update"
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:2325
+msgid "Update recommended"
+msgstr ""
+
+#. translators: 1: install status, 2: update status
+#: includes/admin/plugins/class-tgm-plugin-activation.php:2334
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#. translators: 1: number of plugins.
+#: includes/admin/plugins/class-tgm-plugin-activation.php:2380
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: includes/admin/plugins/class-tgm-plugin-activation.php:2384
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: includes/admin/plugins/class-tgm-plugin-activation.php:2388
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: includes/admin/plugins/class-tgm-plugin-activation.php:2392
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:2474
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:2482
+msgid "Installed version:"
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:2490
+msgid "Minimum required version:"
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:2502
+msgid "Available version:"
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:2525
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:2539
+msgid "Plugin"
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:2540
+msgid "Source"
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:2541
+msgid "Type"
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:2545
+msgid "Version"
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:2546
+msgid "Status"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: includes/admin/plugins/class-tgm-plugin-activation.php:2595
+msgid "Install %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: includes/admin/plugins/class-tgm-plugin-activation.php:2600
+msgid "Update %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: includes/admin/plugins/class-tgm-plugin-activation.php:2606
+msgid "Activate %2$s"
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:2676
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:2709
+msgid "Install"
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:2715
+msgid "Update"
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:2718
+msgid "Activate"
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:2749
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:2751
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:2792
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:2794
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:2900
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:2927
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:3151
+msgid "Plugin activation failed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: includes/admin/plugins/class-tgm-plugin-activation.php:3467
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. translators: 1: plugin name, 2: error message.
+#: includes/admin/plugins/class-tgm-plugin-activation.php:3470
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: includes/admin/plugins/class-tgm-plugin-activation.php:3472
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:3476
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: includes/admin/plugins/class-tgm-plugin-activation.php:3478
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:3479
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: includes/admin/plugins/class-tgm-plugin-activation.php:3481
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:3484
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: includes/admin/plugins/class-tgm-plugin-activation.php:3486
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: includes/admin/plugins/class-tgm-plugin-activation.php:3487
+msgid "All installations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: includes/admin/plugins/class-tgm-plugin-activation.php:3489
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: includes/admin/plugins/tgm-plugin-activation-config.php:88
+msgid "Elementor"
+msgstr ""
+
+#: includes/admin/plugins/tgm-plugin-activation-config.php:92
+msgid "Smash Balloon Instagram Feed"
+msgstr ""
+
+#: includes/admin/plugins/tgm-plugin-activation-config.php:96
+msgid "Contact Form 7"
+msgstr ""
+
+#: includes/admin/plugins/tgm-plugin-activation-config.php:100
+msgid "MailChimp for WordPress"
+msgstr ""
+
+#: includes/admin/plugins/tgm-plugin-activation-config.php:104
+msgid "One Click Demo Import"
+msgstr ""
+
+#: includes/admin/plugins/tgm-plugin-activation-config.php:108
+msgid "WooCommerce"
+msgstr ""
+
+#: includes/admin/plugins/tgm-plugin-activation-config.php:112
+msgid "Yoast SEO"
+msgstr ""
+
+#: includes/assets/class-customizer-assets-controller.php:76
+msgid "Header Image"
+msgstr ""
+
+#: includes/assets/class-customizer-assets-controller.php:80
+msgid "Please enter a number."
+msgstr ""
+
+#: includes/assets/class-customizer-assets-controller.php:81
+msgid "Please enter a positive number."
+msgstr ""
+
+#. translators: %d number value from realtime
+#: includes/assets/class-customizer-assets-controller.php:83
+msgid "Please select a value that is less than the Maximum Load Time (%d seconds)."
+msgstr ""
+
+#. translators: %d number value from realtime
+#: includes/assets/class-customizer-assets-controller.php:85
+msgid "Please enter a value greater than the Minimum Load Time (%d seconds)."
+msgstr ""
+
+#: includes/assets/class-front-assets-controller.php:102
+msgid "No image found"
+msgstr ""
+
+#: includes/assets/custom/class-custom-ajax.php:28
+#: template-parts/pagination/pagination-ajax-auto.php:6
+#: template-parts/pagination/pagination-ajax-manual.php:6
+msgid "No More Posts"
+msgstr ""
+
+#. translators: %1$s: WordPress version. %2$s: PHP version. %3$s: current WordPress version. %4$s: current PHP version.
+#: includes/class-back-compat.php:27
+msgid "CozyStay requires at least WordPress version %1$s and PHP version %2$s. You are running WordPress version %3$s and PHP version %4$s. Please upgrade and try again."
+msgstr ""
+
+#: includes/class-theme-core-filters.php:87
+msgid "CozyStay Profile"
+msgstr ""
+
+#: includes/class-theme-core-filters.php:89
+msgid "CozyStay Facebook"
+msgstr ""
+
+#: includes/class-theme-core-filters.php:91
+msgid "CozyStay Instagram"
+msgstr ""
+
+#: includes/class-theme-core-filters.php:93
+msgid "CozyStay Social"
+msgstr ""
+
+#: includes/class-theme-core-filters.php:95
+msgid "CozyStay Opening Hours"
+msgstr ""
+
+#: includes/class-theme-core-filters.php:97
+msgid "CozyStay Category"
+msgstr ""
+
+#: includes/class-theme-core-filters.php:99
+msgid "CozyStay Posts"
+msgstr ""
+
+#: includes/class-theme-core-filters.php:237
+msgid "CozyStay Elements"
+msgstr ""
+
+#: includes/class-theme-core-filters.php:325
+msgid "Days"
+msgstr ""
+
+#: includes/class-theme-core-filters.php:337
+msgid "Minutes"
+msgstr ""
+
+#: includes/class-theme-core-filters.php:343
+msgid "Seconds"
+msgstr ""
+
+#: includes/class-wp-core.php:110
+msgid "Primary Menu"
+msgstr ""
+
+#: includes/class-wp-core.php:111
+msgid "Social Menu"
+msgstr ""
+
+#: includes/class-wp-core.php:119
+msgid "Main Sidebar"
+msgstr ""
+
+#: includes/class-wp-core.php:120
+msgid "Add widgets here to appear in your main sidebar."
+msgstr ""
+
+#: includes/default-option-values.php:44
+msgid "This website uses cookies to improve your web experience."
+msgstr ""
+
+#: includes/default-option-values.php:45
+msgid "Accept"
+msgstr ""
+
+#. translators: %1$s: font icon with color %2$s: line break
+#: includes/default-option-values.php:78
+#: includes/default-option-values.php:106
+msgid "© Copyright CozyStay WordPress Theme for Hotel Booking."
+msgstr ""
+
+#: includes/default-option-values.php:231
+msgid "Read More"
+msgstr ""
+
+#: includes/default-option-values.php:273
+msgid "You May Also Like"
+msgstr ""
+
+#: includes/default-option-values.php:277
+msgid "Discover More"
+msgstr ""
+
+#: includes/default-option-values.php:291
+msgid "Availability"
+msgstr ""
+
+#: includes/front/class-404.php:44
+msgid "Page not found"
+msgstr ""
+
+#: includes/front/class-events.php:47
+msgid "Events"
+msgstr ""
+
+#: includes/front/class-front-manager.php:146
+msgid "Scroll Down"
+msgstr ""
+
+#: includes/front/class-walker-comment.php:24
+msgid "says:"
+msgstr ""
+
+#: includes/front/class-walker-comment.php:31
+msgid "at"
+msgstr ""
+
+#: includes/front/class-walker-comment.php:35
+#: includes/front/functions-template.php:391
+msgid "Edit"
+msgstr ""
+
+#: includes/front/class-walker-comment.php:39
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: includes/front/class-walker-menu.php:15
+#: includes/front/class-walker-menu.php:77
+#: includes/front/class-walker-menu.php:111
+msgid "expand child menu"
+msgstr ""
+
+#: includes/front/functions-post-list-template.php:112
+#: template-parts/page-header/single-post.php:24
+msgid "By"
+msgstr ""
+
+#: includes/front/functions-template.php:233
+msgid "Tags:"
+msgstr ""
+
+#: includes/front/functions-template.php:293
+msgid "Posted On: "
+msgstr ""
+
+#: includes/front/functions-template.php:307
+msgid "Updated On: "
+msgstr ""
+
+#. translators: %s comment number
+#: includes/front/functions-template.php:350
+msgid "%s Comments"
+msgstr ""
+
+#. translators: %s comment number
+#: includes/front/functions-template.php:350
+msgid "%s Comment"
+msgstr ""
+
+#: includes/front/functions-template.php:373
+msgid "Pages:"
+msgstr ""
+
+#: includes/front/functions-template.php:408
+msgid "Share:"
+msgstr ""
+
+#: includes/functions.php:151
+msgid "All"
+msgstr ""
+
+#: includes/functions.php:276
+msgid "Choose Form"
+msgstr ""
+
+#: includes/functions.php:435
+msgid "Google Fonts"
+msgstr ""
+
+#: includes/functions.php:496
+msgid "Post"
+msgstr ""
+
+#: includes/functions.php:497
+msgid "Page"
+msgstr ""
+
+#: includes/importer/class-templates.php:23
+#: includes/importer/class-templates.php:77
+msgid "Import"
+msgstr ""
+
+#: includes/importer/class-templates.php:24
+msgid "Preview"
+msgstr ""
+
+#: includes/importer/class-templates.php:31
+msgid "Live Preview"
+msgstr ""
+
+#: includes/importer/class-templates.php:35
+msgid "Required Plugins To Import Content"
+msgstr ""
+
+#: includes/importer/class-templates.php:45
+msgid "Import Content"
+msgstr ""
+
+#: includes/importer/class-templates.php:45
+msgid "(menus only import with \"All\")"
+msgstr ""
+
+#: includes/importer/class-templates.php:79
+msgid "Done"
+msgstr ""
+
+#: includes/utils/class-custom-block.php:42
+msgid "Choose from the list"
+msgstr ""
+
+#: includes/utils/class-custom-block.php:129
+#: template-parts/defaults/mobile-menu.php:12
+#: template-parts/site-footer/fullscreen-search.php:3
+#: template-parts/site-footer/popup-box.php:15
+msgid "Close"
+msgstr ""
+
+#: includes/utils/class-rest-api.php:35
+msgid "Can't sync from Adobe, please try again later."
+msgstr ""
+
+#: includes/utils/class-rest-api.php:49
+msgid "font(s) found."
+msgstr ""
+
+#: includes/utils/class-rest-api.php:51
+msgid "No Adobe font found. Please make sure the Typekit ID is correct."
+msgstr ""
+
+#: includes/woocommerce/class-woocommerce.php:42
+msgid "Shop Sidebar"
+msgstr ""
+
+#: includes/woocommerce/class-woocommerce.php:44
+msgid "Add widgets here to appear in your shop sidebar."
+msgstr ""
+
+#: includes/woocommerce/class-woocommerce.php:222
+msgid "Website"
+msgstr ""
+
+#: includes/woocommerce/class-woocommerce.php:236
+#: woocommerce/content-product-menu.php:26
+msgid "Sold Out"
+msgstr ""
+
+#: includes/woocommerce/class-woocommerce.php:339
+msgid "Sale"
+msgstr ""
+
+#: includes/woocommerce/class-woocommerce.php:394
+#: template-parts/defaults/site-header.php:36
+msgid "View your shopping cart"
+msgstr ""
+
+#: searchform.php:5
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:6
+msgid "Enter a keyword to search"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Theme Template: No Sidebar"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Theme Template: Left Sidebar"
+msgstr ""
+
+#: template-parts/content/content-none-search.php:3
+#: template-parts/content/content-none.php:3
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content/content-none-search.php:6
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: template-parts/content/single-post-author-info.php:24
+msgid "View All Posts"
+msgstr ""
+
+#: template-parts/content/single-post-navigation.php:5
+msgid "Previous post"
+msgstr ""
+
+#: template-parts/content/single-post-navigation.php:10
+msgid "Next post"
+msgstr ""
+
+#: template-parts/defaults/404.php:8
+msgid "Page Not Found"
+msgstr ""
+
+#: template-parts/defaults/404.php:9
+msgid "Sorry but we couldn't find the page you are looking for. It might have been moved or deleted."
+msgstr ""
+
+#: template-parts/defaults/404.php:10
+msgid "Back to Home"
+msgstr ""
+
+#: template-parts/defaults/site-header.php:47
+msgid "Menu"
+msgstr ""
+
+#. translators: %s author display name
+#: template-parts/page-header/archive-author.php:19
+msgid "Author: %s"
+msgstr ""
+
+#. translators: %s search keyword
+#: template-parts/page-header/archive-search.php:9
+msgid "Search: %s"
+msgstr ""
+
+#: template-parts/page-header/room-search.php:5
+msgid "Room Search Results"
+msgstr ""
+
+#: template-parts/pagination/pagination-ajax-auto.php:5
+#: template-parts/pagination/pagination-ajax-manual.php:5
+msgid "Posts Navigation"
+msgstr ""
+
+#: template-parts/pagination/pagination-ajax-auto.php:7
+#: template-parts/pagination/pagination-ajax-manual.php:8
+msgid "Loading..."
+msgstr ""
+
+#: template-parts/pagination/pagination-ajax-manual.php:7
+msgid "Load More Posts"
+msgstr ""
+
+#: template-parts/pagination/pagination-link-number.php:2
+#: template-parts/pagination/pagination-link-number.php:12
+#: template-parts/pagination/pagination-link-only.php:2
+#: template-parts/pagination/pagination-link-only.php:12
+msgid "Prev"
+msgstr ""
+
+#: template-parts/pagination/pagination-link-number.php:3
+#: template-parts/pagination/pagination-link-number.php:18
+#: template-parts/pagination/pagination-link-only.php:3
+#: template-parts/pagination/pagination-link-only.php:17
+msgid "Next"
+msgstr ""
+
+#: template-parts/pagination/pagination-link-number.php:10
+#: template-parts/pagination/pagination-link-only.php:10
+msgid "Posts navigation"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Theme Template: Wide Content"
+msgstr ""
+
+#: woocommerce/cart/cart-empty.php:14
+msgid "Return to shop"
+msgstr ""
+
+#. translators: %s: Quantity.
+#: woocommerce/global/quantity-input.php:12
+msgid "%s quantity"
+msgstr ""
+
+#. translators: %s: Quantity.
+#: woocommerce/global/quantity-input.php:12
+msgid "Quantity"
+msgstr ""
+
+#: woocommerce/global/quantity-input.php:27
+msgctxt "Product quantity input tooltip"
+msgid "Qty"
+msgstr ""

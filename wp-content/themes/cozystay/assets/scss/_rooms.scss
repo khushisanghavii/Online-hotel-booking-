@@ -1,0 +1,1287 @@
+/* ==========================================================================
+   11.0 Rooms
+   ========================================================================== */
+
+.cs-room-basic-info {
+    margin: var(--item-v-space) 0;
+    
+    ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        list-style: none;
+        
+        li {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+            padding-right: 30px;
+            line-height: 28px;
+            
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+    }
+        
+    .csrbi-icon {
+        margin-right: 10px;
+
+        i {
+            display: flex;
+            font-size: var(--icon-size);
+        }
+    }
+    
+    .csrbi-text {
+        @include fontsize(14);
+        white-space: nowrap;
+    }
+}
+
+.cs-rooms {
+    --post-max-width: 800px;
+    --item-v-space: 10px;
+    --icon-size: 25px;
+    --label-bg: #fff;
+    --label-color: #000;
+    --label-border: #fff;
+    
+    .overlay-label {
+        top: 20px;
+        left: 20px;
+        background: var(--label-bg);
+        border: 1px solid var(--label-border);
+        color: var(--label-color);
+        padding: 8px 12px;
+        @include fontsize(12);
+        text-transform: uppercase;
+        
+        .elementor-editor-active & {
+            pointer-events: auto;
+        }
+    }
+    
+    &.layout-standard {
+        --icon-size: 28px;
+    }
+    
+    &.text-center .cs-room-basic-info ul {
+        justify-content: center;
+    }
+
+    .item-header {
+        margin-bottom: var(--item-v-space);
+    }
+    
+    .cs-room-content {
+        .item-title {
+            margin-bottom: 0;
+        }
+        
+        .item-subtitle {
+            margin-top: var(--item-v-space);
+            @include fontsize(15);
+            color: var(--secondary-color);
+
+            &:first-child {
+                margin: 0 0 var(--item-v-space);
+            }
+        }
+    }
+    
+    &.layout-overlay {
+        .cs-room-content .item-title {
+            margin-bottom: 0;
+        }
+        
+        .cs-room-content .item-subtitle {
+            color: inherit;
+        }
+        
+        .item-header {
+            margin: 0;
+            transition: opacity 0.4s, transform 0.4s;
+        }
+        
+        .post .cs-room-content {
+            @include translateY(0);
+        }
+        
+        .hover-show-content {
+            position: absolute !important;
+            z-index: 9;
+            bottom: 0;
+            left: 0;
+            padding: 150px 24px 30px;
+            opacity: 0;
+            transition: opacity 0.4s, transform 0.4s;
+            @include translateY(50px);
+        }
+        
+        .no-touch &.with-hover-effect .post:hover {
+            .item-header {
+                opacity: 0;
+                @include translateY(-50px);
+            }
+            
+            .hover-show-content {
+                opacity: 1;
+                @include translateY(0);
+            }
+        }
+
+        &.text-v-middle .hover-show-content {
+            top: 50%;
+            bottom: auto;
+            @include translateY(-30%);
+            padding-top: 30px;
+        }
+
+        .no-touch &.text-v-middle.with-hover-effect .post:hover {
+            .hover-show-content {
+                @include translateY(-50%);
+                transition-delay: 0.1s;
+            }
+        }
+        
+        &.slider-dots-overlap .slick-dots {
+            position: absolute;
+            bottom: 25px;
+            left: 0;
+            width: 100%;
+            color: #fff;
+        }
+        
+        &.text-v-middle {
+            .featured-img {
+                &:before {
+                    @include fullblock;
+                    z-index: 7;
+                    content: "";
+                    background: #000;
+                    opacity: 0.3;
+                    pointer-events: none;
+                    transition: opacity 0.4s;
+                }
+            }
+            
+            .no-touch & .post:hover .featured-img:before {
+                opacity: 0;
+            }
+            
+            .cs-room-content {
+                width: 100%;
+                height: 100%;
+                @include flex;
+                @include flexCenter;
+                padding-top: 30px;
+                
+                &:before {
+                    background: none;
+                }
+            }
+        }
+
+        .cs-room-basic-info ul li {
+            margin: 0;
+        }
+    }
+    
+    &.cs-rooms-carousel {
+        &.column-1.carousel-center-mode .post {
+            max-width: var(--post-max-width);
+        }
+
+        .elementor-column:only-child &:hover .slick-slide {
+            will-change: transform;
+        }
+        
+        .post {
+            margin-top: 0;
+        }
+
+        .posts-wrapper.slick-initialized {
+            display: block;
+        }
+
+        &.column-1.layout-overlay.carousel-center-mode {
+            .cs-room-content {
+                opacity: 1;
+                transition: opacity 0.4s 0.5s;
+            }
+
+            .slick-initialized .post:not(.slick-center) .cs-room-content {
+                opacity: 0;
+            }
+        }
+
+        &.layout-overlay.slider-dots-overlap.column-1:not(.text-v-middle) {
+            .post .post-content {
+                padding-bottom: 55px;
+            }
+
+            .hover-show-content {
+                padding-bottom: 60px;
+            }
+        }
+
+        &.layout-overlay.text-v-middle.slider-arrows-overlap {
+            .cs-room-content,
+            .hover-show-content {
+                padding-right: 80px;
+                padding-left: 80px;
+            }
+        }
+    }
+    
+    &.slider-arrow-top {
+        .slider-arrows {
+            position: absolute;
+            top: -60px;
+            right: 0;
+            
+            .slick-arrow {
+                --arrow-size: 40px;
+                position: relative;
+                right: auto !important;
+                left: auto !important;
+                @include transform(none);
+                margin: 0;
+                border: 1px solid var(--border-color);
+                box-sizing: content-box;
+                box-shadow: none;
+                
+                &.slick-prev {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+
+    &.hide-slider-dots {
+        .slider-dots {
+            height: 0;
+            opacity: 0;
+            overflow: hidden;
+        }
+    }
+}
+
+// Single Room Page
+.single-room {
+    --sidebar: 440px;
+    --sidebar-gap: 70px;
+}
+
+.room-top-section {
+    position: relative;
+    margin-bottom: 50px;
+
+    .featured-img {
+        position: relative;
+        width: 100%;
+        height: 360px;
+
+        img {
+            @include centered;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .cs-gallery-view-all {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        z-index: 9;
+
+        .button {
+            --btn-bg: rgba(0, 0, 0, 0.6);
+            --btn-color: #fff;
+            --btn-height: 38px;
+            font-family: var(--body-font);
+            padding: 0 15px 0 32px;
+            text-transform: uppercase;
+            @include fontsize(13);
+            font-weight: 500;
+            align-items: center;
+
+            &:before {
+                @include centered-vertical;
+                left: 12px;
+                @include fontElegant;
+                content: "\e08c";
+                font-size: 13px;
+                line-height: 1;
+            }
+        }
+    }
+}
+
+// Add dark overlay to top section images when site header is a transparent header
+.room-template-default.single-room .site-header.overlap-header ~ .site-content .room-top-section {
+    .featured-img:after {
+        @include fullblock;
+        z-index: 3;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+        content: "";
+    }
+
+    .gallery-carousel .cs-gallery-item:after {
+        position: absolute;
+        top: 0;
+        left: var(--gallery-gap);
+        width: calc(100% - var(--gallery-gap)*2);
+        height: 100%;
+        z-index: 3;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+        content: "";
+    }
+}
+
+.room {
+    .post-header {
+        margin-bottom: 40px;
+
+        .entry-title {
+            @include fontsize(30);
+        }
+
+        .item-subtitle {
+            margin-top: 20px;
+            @include fontsize(15);
+            color: var(--secondary-color);
+        }
+
+        .cs-room-basic-info {
+            --icon-size: 28px;
+            margin: 25px 0 0;
+        }
+    }
+}
+
+.room-availability {
+    padding-top: 50px;
+
+    .container {
+        padding: 0;
+    }
+
+    .room-availability-title {
+        padding-top: 50px;
+        margin-bottom: 30px;
+        border-top: 1px solid var(--border-color);
+        @include fontsize(24);
+    }
+
+    .hidden-calendar {
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .daterangepicker {
+        position: relative;
+        left: auto !important;
+        top: auto !important;
+        right: auto !important;
+    }
+
+    .theme-cozystay & .daterangepicker {
+        --dropdown-bg: transparent;
+        --dropdown-color: var(--text-color);
+        --dropdown-border: transparent;
+        --available-bg: transparent;
+        --active-bg: var(--primary-color);
+        --active-color: #fff;
+        --inrange-bg: #ede6dc;
+        --inrange-color: #000;
+        --disabled-color: #d8d9db;
+        --padding: 0px;
+        --td-border: transparent;
+        --tooltip-bg: var(--text-color);
+        --tooltip-color: var(--bg-color);
+        --no-check-inout: rgba(0, 0, 0, 0.7);
+        --hover-highlight: var(--primary-color);
+        width: 100%;
+
+        .calendar-table {
+            th,
+            td {
+                width: 54px;
+                max-width: 100%;
+                height: 42px;
+            }
+        }
+
+        td.off {
+            background: none;
+        }
+
+        td {
+            font-size: 13px;
+        }
+
+        .drp-calendar {
+            width: 50%;
+        }
+
+        .drp-calendar.left {
+            padding-right: 8px;
+            padding-left: 0;
+        }
+
+        .drp-calendar.right {
+            float: right;
+            padding-right: 0;
+        }
+
+        &.show-calendar .drp-buttons {
+            padding: 20px var(--padding);
+        }
+
+        .drp-buttons {
+            border-top-color: var(--border-color);
+            
+            .btn {
+                padding: 8px 14px;
+                min-width: 80px;
+                background: transparent;
+                border: 1px solid var(--text-color);
+                border-radius: 2px;
+                color: var(--text-color);
+                font-family: var(--body-font);
+                font-weight: 500;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                cursor: pointer;
+                box-sizing: border-box;
+                transition: 0.2s;                
+
+                &.applyBtn {
+                    background: var(--text-color);
+                    color: var(--bg-color);
+                }
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+
+    .theme-cozystay.dark-color & .daterangepicker {
+        --disabled-color: #555;
+        --no-check-inout: rgba(255, 255, 255, 0.7);
+    }
+}
+
+.similar-rooms {
+    margin-bottom: 80px;
+    
+    .similar-rooms-title {
+        padding-top: 70px;
+        margin-bottom: 50px;
+        border-top: 1px solid var(--border-color);
+        @include fontsize(30);
+    }
+}
+
+// Single Room Booking Form
+.cs-room-booking {
+    --csrb-bg: transparent;
+    --csrb-border-radius: 8px;
+    --csrb-box-shadow: 0 5px 30px rgba(80, 57, 24, 0.15);
+    --total-divider: rgba(0, 0, 0, 0.1);
+    --inner-bd: var(--primary-color);
+    position: relative;
+
+    .dark-color & {
+        --csrb-bg: rgba(255, 255, 255, 0.02);
+        --csrb-box-shadow: none;
+        --total-divider: rgba(255, 255, 255, 0.1);
+    }
+
+    .cs-reservation-form {
+        --form-bd: var(--primary-color);
+        --field-space: 12px;
+    }
+
+    &.with-inner-border {
+        &:after {
+            @include centered;
+            display: block;
+            width: calc(100% - 20px);
+            height: calc(100% - 20px);
+            content: "";
+            border: 1px solid var(--inner-bd);
+            pointer-events: none;
+        }
+    }
+
+    .room-booking-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 32px;
+
+        h4 {
+            @include fontsize(30);
+            text-transform: uppercase;
+
+            + span {
+                text-align: right;
+            }
+        }
+
+        .base-price {
+            @include fontsize(18);
+            font-weight: 500;
+
+            del {
+                @include fontsize(15);
+                font-weight: 400;
+                opacity: 0.5;
+            }
+        }
+    }
+
+    .cs-room-booking-wrap {
+        padding: 50px 45px 55px;
+        background: var(--csrb-bg);
+        border-radius: var(--csrb-border-radius);
+        box-shadow: var(--csrb-box-shadow);
+        transition: opacity 0.3s;
+    }
+
+    .cs-form-group {
+        margin-top: 60px;
+    }
+
+    .csf-title {
+        @include fontsize(24);
+
+        + .cs-extra-service {
+            margin-top: 10px;
+        }
+    }
+
+    .cs-form-field.cs-rooms {
+        position: relative;
+    }
+
+    .cs-form-notice {
+        --line-space: 15px;
+        position: absolute;
+        top: 50%;
+        right: -4px;
+        @include translate(100%, -50%);
+        margin-top: calc(var(--field-space)/2);
+        padding: 3px 8px;
+        width: fit-content;
+        z-index: 99;
+        background: var(--text-color);
+        color: var(--bg-color);
+        border-radius: 2px;
+        @include fontsize(10);
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        transition: 0.3s;
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+
+        p {
+            margin: 0;
+        }
+
+        &.show {
+            opacity: 1;
+            pointer-events: auto;
+            visibility: visible;
+        }
+
+        &:after {
+            position: absolute;
+            display: block;
+            top: 50%;
+            @include transform(translateY(-50%) rotate(45deg));
+            left: -2px;
+            width: 6px;
+            height: 6px;
+            background: var(--text-color);
+            content: "";
+        }
+    }
+
+    .cs-extra-service {
+        .field-wrap {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .label-checkbox.obligatory {
+            cursor: not-allowed;
+
+            * {
+                pointer-events: none;
+            }
+        }
+    }
+
+    .hidden-check {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        @include translateY(-50%);
+        opacity: 0;
+        width: 17px;
+        height: 17px;
+        cursor: pointer;
+
+        &:checked + .cs-styled-checkbox:after {
+            opacity: 1;
+        }
+    }
+
+    .cs-styled-checkbox {
+        position: relative;
+        width: 17px;
+        height: 17px;
+        border: 1px solid var(--form-bd);
+        margin-right: 12px;
+        pointer-events: none;
+
+        &:after {
+            @include centered;
+            display: block;
+            width: 8px;
+            height: 8px;
+            background: var(--form-bd);
+            content: "";
+            opacity: 0;
+        }
+    }
+
+    .label-checkbox {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        .checkbox-label label {
+            cursor: pointer;
+        }
+    }
+
+    .price-quantity {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        .cs-form-price {
+            @include fontsize(14);
+            line-height: 35px;
+
+            &:not(:last-child) {
+                margin-right: 15px;
+            }
+
+            &.cs-form-price-long {
+                .cs-form-price-brief {
+                    &:after {
+                        display: inline-block;
+                        margin-left: 4px;
+                        content: "...";
+                    }
+                }
+
+                .cs-form-price-all {
+                    position: absolute;
+                    z-index: 9;
+                    top: 0;
+                    right: 0;
+                    @include translateY(-100%);
+                    padding: 10px;
+                    width: fit-content;
+                    border-radius: 4px;
+                    background: var(--text-color);
+                    color: var(--bg-color);
+                    @include fontsize(12.5);
+                    line-height: 1.5;
+                    white-space: nowrap;
+                    opacity: 0;
+                    pointer-events: none;
+                    visibility: hidden;
+                    transition: opacity 0.3s;
+
+                    &:after {
+                        position: absolute;
+                        right: 30px;
+                        bottom: -4px;
+                        @include rotate(45deg);
+                        width: 10px;
+                        height: 10px;
+                        background: var(--text-color);
+                        content: "";
+                    }
+                }
+
+                &:hover {
+                    .cs-form-price-all {
+                        opacity: 1;
+                        pointer-events: auto;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+
+        .field-input-wrap {
+            width: 65px;
+
+            input {
+                --field-height: 35px;
+                text-align: left;
+            }
+        }
+
+        .csf-dropdown {
+            bottom: -5px;
+            padding: 10px 5px;
+            min-width: 130px !important;
+
+            .cs-form-label {
+                display: none;
+            }
+
+            .csf-dropdown-item {
+                justify-content: center;
+            }
+
+            .cs-quantity .input-text {
+                @include fontsize(14);
+            }
+        }
+    }
+
+    .cs-form-total-price {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 35px;
+        padding-top: 40px;
+        cursor: pointer;
+
+        &:before {
+            @include centered-horizontal;
+            top: 0;
+            display: block;
+            width: calc(100% + 70px);
+            height: 1px;
+            background: var(--total-divider);
+            content: "";
+        }
+
+        .price-details:before {
+            @include fontElegant;
+            content: "\33";
+            @include fontsize(18);
+        }
+
+        &.toggled-on .price-details:before {
+            content: "\32";
+        }
+
+        .total-price {
+            @include fontsize(24);
+        }
+    }
+
+    .cs-form-price-details {
+        position: relative;
+        margin-top: 20px;
+        @include fontsize(15);
+
+        ul {
+            display: block;
+            margin: 0;
+        }
+
+        li {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+            padding-top: 8px;
+            border-top: 1px dashed var(--total-divider);
+
+            &.cs-form-price-details-total {
+                @include fontsize(18);
+                font-weight: 500;
+            }
+
+            &.with-tax-info {
+                align-items: flex-start;
+
+                .csf-pd-value {
+                    text-align: right;
+                }
+
+                .includes_tax,
+                .excludes_tax {
+                    display: block;
+                    font-weight: 400;
+                    opacity: 0.6;
+                    @include fontsize(14);
+                }
+            }
+
+            &.csf-pd-total-base > .csf-pd-label {
+                cursor: pointer;
+            }
+
+            .info-indicator {
+                @include translateY(-1px);
+                display: inline-block;
+                width: 14px;
+                height: 14px;
+                border: 1px solid;
+                border-radius: 50%;
+                @include fontsize(12);
+                font-style: italic;
+                line-height: 12px;
+                text-align: center;
+                font-family: serif;
+                font-weight: 600;
+                opacity: 0.6;
+            }
+
+            .csf-base-price-breakdown {
+                --line-space: 15px;
+                position: absolute;
+                top: -5px;
+                left: 0;
+                @include translateY(-100%);
+                padding: 20px 24px;
+                width: 100%;
+                z-index: 99;
+                background: var(--bg-color);
+                color: var(--text-color);
+                border-radius: 8px;
+                box-shadow: 0 5px 30px rgba(80, 57, 24, 0.3);
+                transition: 0.3s;
+                opacity: 0;
+                pointer-events: none;
+                visibility: hidden;
+
+                &.show {
+                    opacity: 1;
+                    pointer-events: auto;
+                    visibility: visible;
+                }
+
+                &:after {
+                    position: absolute;
+                    display: none;
+                    width: 10px;
+                    height: 10px;
+                    background: var(--bg-color);
+                    content: "";
+                }
+            }
+
+            .breakdown-title,
+            .breakdown-footer {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                @include fontsize(16);
+                font-weight: 500;
+            }
+
+            .breakdown-title {
+                padding-bottom: var(--line-space);
+                margin-bottom: var(--line-space);
+                border-bottom: 1px solid var(--border-color);
+            }
+
+            .breakdown-main {
+                max-height: 300px;
+                overflow: auto;
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+                -webkit-overflow-scrolling: touch;
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+
+                li {
+                    margin: 0;
+                    padding: 0;
+                    border: none;
+                    @include fontsize(14);
+
+                    &:not(:first-child) {
+                        margin-top: 8px;
+                    }
+                }
+            }
+
+            .breakdown-footer {
+                padding-top: var(--line-space);
+                margin-top: var(--line-space);
+                border-top: 1px solid var(--border-color);
+            }
+
+            del {
+                opacity: 0.6;
+            }
+        }
+
+        .discounted {
+            color: red;
+        }
+    }
+
+    .cs-reservation-form.style-block .cs-form-field.cs-submit {
+        padding-top: 35px;
+    }
+
+    button[type="submit"] {
+        @include fontsize(18);
+    }
+
+    .cs-form-error-message,
+    .cs-form-success-message {
+        margin-top: 12px;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    .cs-form-error-message {
+        color: red;
+    }
+
+    .cs-form-success-message {
+        color: green;
+    }
+
+    .cs-submit .btn-text {
+        position: relative;
+        display: block;
+
+        &:after {
+            position: absolute;
+            top: 1px;
+            right: -30px;
+            display: block;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            border: 2px solid currentColor;
+            border-top: 2px solid transparent;
+            @include animation(spin 1s linear infinite);
+            transition: opacity 0.3s;
+            transform-origin: 50% 50%;
+            opacity: 0;
+            content: "";
+        }
+    }
+
+    &.loading {
+        .cs-room-booking-wrap {
+            pointer-events: none;
+            opacity: 0.5;
+        }   
+
+        .cs-submit .btn-text:after {
+            opacity: 1;
+        }   
+    }
+}
+
+// Change colors for Simple Lightbox - For Single Room Page Top Gallery 2
+.sl-overlay {
+    background: #000 !important;
+}
+
+.sl-wrapper .sl-close,
+.sl-wrapper .sl-navigation button,
+.sl-wrapper .sl-counter {
+    color: #fff !important;
+}
+
+@include screen(handheld-l) {
+    .cs-rooms.layout-grid.column-1 {
+        .posts-wrapper {
+            margin-left: 0;
+        }
+        
+        .post {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .post-title {
+            @include fontsize(30);
+        }
+
+        &:not(.carousel-center-mode) {
+            --post-gap: 0;
+        }
+    }
+
+    .room-top-section .featured-img {
+        height: 480px;
+    }
+
+    .cs-rooms.cs-rooms-carousel {
+        .slick-arrow {
+            &.slick-prev {
+                left: -30px;
+                
+                .elementor-section-full_width & {
+                    left: 60px;
+                }
+            }
+            
+            &.slick-next {
+                right: -30px;
+                
+                .elementor-section-full_width & {
+                    right: 60px;
+                }
+            }
+        }
+
+        &.column-1 .posts-wrapper:not(.slick-initialized) {
+            justify-content: center;
+            margin-left: calc(0px - var(--post-gap));
+        }
+    }
+}
+
+@include screen(desktop) {
+    .cs-rooms.layout-grid.column-1 {
+        .post-title {
+            @include fontsize(36);
+        }
+    }
+
+    .cs-rooms.layout-standard .cs-room-basic-info {
+        margin: 20px 0;
+    }
+
+    .cs-rooms {
+        &.layout-standard,
+        &.layout-list {
+            --item-v-space: 20px;
+
+            .item-excerpt {
+                margin-bottom: var(--item-v-space);
+            }
+        }
+
+        .elementor-column:only-child &.cs-rooms-carousel.column-1.text-v-middle {
+            --item-v-space: 20px;
+        }
+    }
+
+    .room-top-section {
+        margin-bottom: 80px;
+    }
+
+    .room {
+        .post-header {
+            margin-bottom: 60px;
+
+            .entry-title {
+                @include fontsize(36);
+            }
+        }
+    }
+
+    .room-top-section .featured-img {
+        height: 520px;
+
+        .site-header.overlap-header ~ .site-content & {
+            height: 600px;
+        }
+    }
+
+    .cs-room-booking .cs-form-price-details li .csf-base-price-breakdown {
+        top: 20px;
+
+        &:after {
+            display: block;
+            top: 50%;
+            @include transform(translateY(-50%) rotate(45deg));
+        }
+
+        .site-content.with-sidebar-right & {
+            left: 0;
+            @include translate(-105%, -50%);
+
+            &:after {
+                right: -4px;
+            }
+        }
+
+        .site-content.with-sidebar-left & {
+            right: 0;
+            left: auto;
+            @include translate(105%, -50%);
+
+            &:after {
+                right: auto;
+                left: -4px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .cs-room-basic-info {
+        ul li:not(:last-child) {
+            padding-right: 20px;
+        }
+
+        .cs-rooms.text-center & ul li {
+            padding: 0 10px;
+        }
+    }
+
+    .cs-rooms {
+        --icon-size: 20px;
+    }
+
+    .cs-rooms .post-title {
+        @include fontsize(24);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .room-top-section .cs-gallery.gallery-mosaic .cs-gallery-wrap {
+        display: block;
+
+        .cs-gallery-item:not(:first-child) {
+            display: none;
+        }
+    }
+
+    .cs-rooms.cs-rooms-carousel.layout-overlay {
+        &.slider-dots-overlap:not(.text-v-middle) {
+            .post .post-content {
+                padding-bottom: 55px;
+            }
+
+            .hover-show-content {
+                padding-bottom: 60px;
+            }
+        }
+
+        &.column-1.carousel-center-mode .slick-initialized .post:not(.slick-center) .cs-room-content {
+            opacity: 1;
+        }
+    }
+
+    .theme-cozystay .room-availability .daterangepicker .drp-calendar {
+        float: none !important;
+        width: 100%;
+
+        &.left,
+        &.right {
+            padding-right: 8px;
+            padding-left: 8px;
+        }
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .cs-room-booking {
+        .cs-room-booking-wrap {
+            padding: 30px;
+        }
+
+        .room-booking-title {
+            @include fontsize(14);
+
+            h4 {
+                @include fontsize(24);
+            }
+
+            .base-price {
+                @include fontsize(16);
+            }
+        }
+
+        .cs-form-total-price:before {
+            width: calc(100% + 60px);
+        }
+
+        .cs-form-label {
+            @include fontsize(14);
+        }
+
+        .csf-title,
+        .cs-form-total-price .total-price {
+            @include fontsize(20);
+        }
+
+        .cs-extra-service .field-wrap {
+            .cs-styled-checkbox,
+            .cs-form-price:not(:last-child) {
+                margin-right: 8px;
+            }
+        }
+
+        .price-quantity .csf-dropdown {
+            right: 0;
+            left: auto;
+        }
+
+        .cs-form-notice {
+            width: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .cs-room-booking {
+        .cs-extra-service .field-wrap {
+            flex-wrap: wrap;
+
+            .price-quantity {
+                width: 100%;
+                padding-left: 29px;
+            }
+        }
+
+        .cs-reservation-form.style-block {
+            .form-field-col-1-2 {
+                width: 100%;
+            }
+
+            .form-field-col-1-2.cs-adults {
+                padding-right: 0;
+            }
+
+            .form-field-col-1-2.cs-children {
+                padding-left: 0;
+            }
+        }
+    }
+}

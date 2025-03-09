@@ -1,0 +1,99 @@
+
+---Downloaded files---
+The import files for: Mountain Chalet were successfully downloaded!
+Initial max execution time = 120
+Files info:
+Site URL = http://localhost/Prishi
+Data file = C:\wamp64\www\prishi/wp-content/themes/cozystay/demo-data/mountain-chalet/content.xml
+Widget file = C:\wamp64\www\prishi/wp-content/themes/cozystay/demo-data/mountain-chalet/widgets.wie
+Customizer file = C:\wamp64\www\prishi/wp-content/themes/cozystay/demo-data/mountain-chalet/customizer.dat
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Main Sidebar : 
+
+Search - No Title - Imported
+CozyStay Posts - The Latest News - Imported
+Categories - No Title - Imported
+Mailchimp Sign-Up Form - Newsletter - Imported
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---ocdi/after_import---
+

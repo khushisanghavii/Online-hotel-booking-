@@ -1,0 +1,191 @@
+<wpml-config>
+	<admin-texts>
+		<key name="theme_mods_cozystay">
+			<key name="cozystay_general_cookie_law_message" />
+			<key name="cozystay_general_cookie_law_accept_button_text" />
+			<key name="cozystay_mobile_site_header_copyright_text" />
+			<key name="cozystay_above_site_footer_text_content" />
+			<key name="cozystay_site_footer_instagram_title" />
+			<key name="cozystay_site_footer_instagram_title_link" />
+			<key name="cozystay_site_footer_bottom_text" />
+			<key name="cozystay_blog_general_read_more_button_text" />
+			<key name="cozystay_blog_single_post_related_post_section_title" />
+			<key name="cozystay_room_list_read_more_button_text" />
+		</key>
+	</admin-texts>
+	<elementor-widgets>
+		<widget name="cs_button">
+			<conditions><condition key="widgetType">cs_button</condition></conditions>
+			<fields>
+				<field type="Button: Text" editor_type="LINE">text</field>
+				<field type="Button: Link URL" editor_type="LINK" key_of="link">url</field>
+			</fields>
+		</widget>
+		<widget name="cs_title">
+            <conditions><condition key="widgetType">cs_title</condition></conditions>
+            <fields>
+				<field type="Section Title: Subtitle" editor_type="AREA">subtitle</field>
+                <field type="Section Title: Title" editor_type="AREA">title</field>
+				<field type="Section Title: Text" editor_type="VISUAL">text</field>
+				<field type="Section Title: Button Text" editor_type="LINE">button_text</field>
+                <field type="Section Title: Button Link URL" editor_type="LINK" key_of="link">url</field>
+            </fields>
+        </widget>
+		<widget name="cs_circle_button">
+			<conditions><condition key="widgetType">cs_circle_button</condition></conditions>
+			<fields>
+				<field type="Circle Button: Text" editor_type="LINE">text</field>
+				<field type="Circle Button: Link URL" editor_type="LINK" key_of="link">url</field>
+			</fields>
+		</widget>
+		<widget name="cs_call_to_action">
+            <conditions><condition key="widgetType">cs_call_to_action</condition></conditions>
+            <fields>
+				<field type="Call to Action: Link URL" editor_type="LINK" key_of="link">url</field>
+				<field type="Call to Action: Subtitle" editor_type="AREA">subtitle</field>
+                <field type="Call to Action: Title" editor_type="AREA">title</field>
+				<field type="Call to Action: Text" editor_type="VISUAL">text</field>
+				<field type="Call to Action: Button Text" editor_type="LINE">button_text</field>
+				<field type="Call to Action: Button Link URL" editor_type="LINK" key_of="button_link">url</field>
+	            <field type="Call to Action: Label Text" editor_type="LINE">label_text</field>
+            </fields>
+        </widget>
+		<widget name="cs_info_box">
+            <conditions><condition key="widgetType">cs_info_box</condition></conditions>
+    		<fields-in-item items_of="list">
+                <field type="Info Box: Title" editor_type="LINE">info_title</field>
+				<field type="Info Box: Info Text" editor_type="AREA">info_text</field>
+				<field type="Info Box: Button Text" editor_type="LINE">button_text</field>
+	            <field type="Info Box: Link URL" editor_type="LINK" key_of="link">url</field>
+            </fields-in-item>
+        </widget>
+		<widget name="cs_fancy_card">
+            <conditions><condition key="widgetType">cs_fancy_card</condition></conditions>
+            <fields>
+				<field type="Fancy Card: Link URL" editor_type="LINK" key_of="link">url</field>
+				<field type="Fancy Card: Subtitle" editor_type="AREA">subtitle</field>
+                <field type="Fancy Card: Title" editor_type="AREA">title</field>
+				<field type="Fancy Card: Text" editor_type="VISUAL">text</field>
+				<field type="Fancy Card: Button Text" editor_type="LINE">button_text</field>
+				<field type="Fancy Card: Button Link URL" editor_type="LINK" key_of="button_link">url</field>
+            </fields>
+        </widget>
+		<widget name="cs_reservation">
+            <conditions><condition key="widgetType">cs_reservation</condition></conditions>
+    		<fields>
+                <field type="Reservation Filter: Check In Label" editor_type="LINE">custom_label_check_in</field>
+                <field type="Reservation Filter: Check Out Label" editor_type="LINE">custom_label_check_out</field>
+                <field type="Reservation Filter: Rooms Label" editor_type="LINE">custom_label_rooms</field>
+                <field type="Reservation Filter: Guest Label" editor_type="LINE">custom_label_guests</field>
+            	<field type="Reservation Filter: Adults Label" editor_type="LINE">custom_label_adults</field>
+            	<field type="Reservation Filter: Children Label" editor_type="LINE">custom_label_children</field>
+				<field type="Reservation Filter: Submit Button Text" editor_type="LINE">custom_button_text</field>
+            </fields>
+        </widget>
+		<widget name="cs_testimonials">
+            <conditions><condition key="widgetType">cs_testimonials</condition></conditions>
+    		<fields-in-item items_of="list">
+                <field type="Testimonials: Content" editor_type="AREA">content</field>
+				<field type="Testimonials: Name" editor_type="LINE">name</field>
+				<field type="Testimonials: Title" editor_type="LINE">title</field>
+            </fields-in-item>
+        </widget>
+		<widget name="cs_block_links">
+            <conditions><condition key="widgetType">cs_block_links</condition></conditions>
+    		<fields>
+                <field type="Block Link #1: Block Link URL" editor_type="LINK" key_of="block1_link">url</field>
+                <field type="Block Link #1: Subtitle" editor_type="AREA">block1_subtitle</field>
+                <field type="Block Link #1: Title" editor_type="AREA">block1_title</field>
+                <field type="Block Link #1: Text" editor_type="VISUAL">block1_text</field>
+            	<field type="Block Link #1: Button Text" editor_type="LINE">block1_button_text</field>
+                <field type="Block Link #2: Block Link URL" editor_type="LINK" key_of="block2_link">url</field>
+                <field type="Block Link #2: Subtitle" editor_type="AREA">block2_subtitle</field>
+                <field type="Block Link #2: Title" editor_type="AREA">block2_title</field>
+                <field type="Block Link #2: Text" editor_type="VISUAL">block2_text</field>
+            	<field type="Block Link #2: Button Text" editor_type="LINE">block2_button_text</field>
+            </fields>
+        </widget>
+		<widget name="cs_list">
+            <conditions><condition key="widgetType">cs_list</condition></conditions>
+    		<fields-in-item items_of="list">
+                <field type="List: Content" editor_type="AREA">content</field>
+	            <field type="List: Link URL" editor_type="LINK" key_of="link">url</field>
+            </fields-in-item>
+        </widget>
+		<widget name="cs_instagram">
+            <conditions><condition key="widgetType">cs_instagram</condition></conditions>
+            <fields>
+                <field type="Instageam: Title" editor_type="LINE">title</field>
+	            <field type="Instageam: Link URL" editor_type="LINK" key_of="link">url</field>
+            </fields>
+        </widget>
+		<widget name="cs_team">
+            <conditions><condition key="widgetType">cs_team</condition></conditions>
+    		<fields>
+                <field type="Team Member: Position" editor_type="LINE">position</field>
+                <field type="Team Member: Name" editor_type="LINE">name</field>
+                <field type="Team Member: Text" editor_type="AREA">text</field>
+            </fields>
+    		<fields-in-item items_of="social_links">
+                <field type="Team Member: Social Title" editor_type="LINE">social_title</field>
+	            <field type="Team Member: Social Link URL" editor_type="LINK" key_of="social_link">url</field>
+            </fields-in-item>
+        </widget>
+		<widget name="cs_menu_toggle">
+            <conditions><condition key="widgetType">cs_menu_toggle</condition></conditions>
+    		<fields>
+                <field type="Mobile Menu Toggle: Button Text" editor_type="LINE">button_text</field>
+            </fields>
+        </widget>
+		<widget name="cs_tabs">
+            <conditions><condition key="widgetType">cs_tabs</condition></conditions>
+    		<fields-in-item items_of="tabs">
+                <field type="Tab: Title" editor_type="LINE">title</field>
+                <field type="Tab: Text" editor_type="VISUAL">text</field>
+                <field type="Tab: Unique ID" editor_type="LINE">unique_id</field>
+            </fields-in-item>
+        </widget>
+		<widget name="cs_slider">
+            <conditions><condition key="widgetType">cs_tabs</condition></conditions>
+    		<fields-in-item items_of="sliders">
+                <field type="Slider: Text" editor_type="VISUAL">text</field>
+            </fields-in-item>
+        </widget>
+		<widget name="cs_food_menu">
+            <conditions><condition key="widgetType">cs_food_menu</condition></conditions>
+    		<fields-in-item items_of="menu_list">
+                <field type="Food Menu: Title" editor_type="AREA">title</field>
+	            <field type="Food Menu: Price" editor_type="LINE">price</field>
+	            <field type="Food Menu: Price (optional)" editor_type="LINE">price2</field>
+	            <field type="Food Menu: Details" editor_type="AREA">details</field>
+	            <field type="Food Menu: Image Link URL" editor_type="LINK" key_of="image_link">url</field>
+	            <field type="Food Menu: Label (Optional)" editor_type="LINE">label</field>
+	            <field type="Food Menu: Link URL" editor_type="LINK" key_of="link">url</field>
+            </fields-in-item>
+        </widget>
+		<widget name="cs_open_table">
+            <conditions><condition key="widgetType">cs_open_table</condition></conditions>
+    		<fields-in-item items_of="list">
+                <field type="OpenTable Form: Restaurant ID" editor_type="LINE">rid</field>
+	            <field type="OpenTable Form: Restaurant Name" editor_type="LINE">name</field>
+            </fields-in-item>
+        </widget>
+		<widget name="cs_food_card">
+            <conditions><condition key="widgetType">cs_food_card</condition></conditions>
+    		<fields>
+                <field type="Food Card: Title" editor_type="LINE">title</field>
+                <field type="Food Card: Text" editor_type="AREA">content</field>
+            </fields>
+    		<fields-in-item items_of="extra_list">
+                <field type="Food Card: Extra Item Label" editor_type="LINE">extra_label</field>
+	            <field type="Food Card: Extra Item Content" editor_type="LINE">extra_content</field>
+            </fields-in-item>
+        </widget>
+		<widget name="cs_video">
+            <conditions><condition key="widgetType">cs_video</condition></conditions>
+    		<fields>
+				<field type="Video: External Video Link URL" editor_type="LINK" key_of="video_url">url</field>
+			</fields>
+        </widget>
+	</elementor-widgets>
+</wpml-config>

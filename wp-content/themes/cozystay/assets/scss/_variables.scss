@@ -1,0 +1,163 @@
+// font
+$font-base-size:       16px;
+$body-font:            'Jost', sans-serif;
+$heading-font:         'Marcellus', serif;
+$secondary-font:       'Jost', sans-serif;
+
+// colors
+$primary-color:        #b99d75;
+$primary-color-semi:   rgba($primary-color, 0.3);
+$secondary-color:      #53624e;
+
+$light-color:          #fff;      // bg color for Light Scheme
+$text-color:           #1a1b1a;   // default text (heading and other) color (for Light Scheme)
+$content-color:        #333632;   // page/post content text color for Light Scheme
+
+$dark-color:           #0e0d0a;   // bg color for Dark Scheme
+$dark-text-color:      #fff;      // text (heading and other) color for Dark Scheme
+$dark-content-color:   #eee;      // page/post content text color for Dark Scheme
+
+// layout
+$spacing-base:         30px;
+$spacing:              50px;
+$site-width:           1300px;
+$sidebar-width:        360px;
+
+// Define CSS Custom Properties
+:root {
+    --spacing: 50px;
+    --heading-font: #{$heading-font};
+    --body-font: #{$body-font};
+    --secondary-font: #{$secondary-font};
+    --btn-font: #{$heading-font};
+    --sidebar: #{$sidebar-width};
+    --site-width: #{$site-width};
+    --sidebar-gap: 80px;
+    
+    // Basic Colors
+	--primary-color: #{$primary-color};
+    --primary-color-semi: #{$primary-color-semi};
+    --secondary-color: #{$secondary-color};
+    --content-color: #{$content-color};
+    
+    --theme-primary-color: var(--primary-color);
+    --theme-secondary-color: var(--secondary-color);
+    
+    // Buttons
+    --btn-bg: var(--primary-color);
+    --btn-color: #fff;
+    --btn-bg-hover: #ab916c;
+    --btn-color-hover: #fff;
+    --btn-height: 52px;
+    --btn-font-size: 16px;
+    --btn-font-weight: 400;
+    --btn-letter-spacing: 0;
+    --btn-text-transform: none;
+    
+    // Heading Fonts
+    --hf-weight: 400;
+    --hf-letter-spacing: 0;
+    --hf-text-transform: none;
+    --hf-style: normal;
+    
+    // Subheading Fonts
+    --subheading-font: #{$secondary-font};
+    --shf-font-size: 12px;
+    --shf-weight: 500;
+    --shf-letter-spacing: 0.1em;
+    --shf-text-transform: uppercase;
+    --shf-style: normal;
+    --shf-color: var(--secondary-color);
+    
+    // Secondary Fonts
+    --sf-letter-spacing: 0.05em;
+    --sf-text-transform: uppercase;
+    --sf-style: normal;
+    
+    // Blog Titles & Text
+    --blog-title-weight: 400;
+    --bt-letter-spacing: 0;
+    --bt-text-transform: none;
+    --bt-style: normal;
+    --post-text-size: 18px;
+    --post-line-height: 1.66;
+    
+    // Widget Titles
+    --widget-title-font: #{$secondary-font};
+    --widget-title-size: 14px;
+    --widget-title-weight: 500;
+    --widget-title-spacing: 0.05em;
+    --widget-title-trans: uppercase;
+    --widget-title-style: normal;
+    
+    // Menu Fonts
+    --nav-font: #{$secondary-font};
+    --nav-font-size: 13px;
+    --nav-font-weight: 500;
+    --nav-font-letter-spacing: 0.05em;
+    --nav-font-transform: uppercase;
+    
+    // Footer Bottom Menu Fonts
+    --fbnav-font-size: 14px;
+    --fbnav-font-weight: 400;
+    --fbnav-font-letter-spacing: 0.05em;
+    --fbnav-font-transform: uppercase;
+    
+    // Other elements
+    --grid-unit: 25;
+    --grid-val: calc(100/var(--grid-unit));
+    --side-padding: calc(var(--grid-val)*2vw);
+    --form-bd-width: 1px;
+    --popup-width: 600px;
+    
+    // Colors for Light Scheme
+    --light-bg-color: #{$light-color};
+    --light-text-color: #{$text-color};
+    --light-content-color: #{$content-color};
+    --light-link-color: var(--primary-color);
+    --light-link-color-hover: var(--primary-color);
+    
+    // Colors for Dark Scheme
+    --dark-bg-color: #{$dark-color};
+    --dark-text-color: #{$dark-text-color};
+    --dark-content-color: #{$dark-content-color};
+    --dark-link-color: var(--primary-color);
+    --dark-link-color-hover: var(--primary-color);
+    
+    .light-color {
+        --bg-color: var(--light-bg-color);
+        --text-color: var(--light-text-color);
+        --content-color: var(--light-content-color);
+        --page-title-bg: #f9f9f9;
+        --page-title-color: #000;
+        --link-color: var(--light-link-color);
+        --link-color-hover: var(--light-link-color-hover);
+        --text-lighter: #666;
+        --form-bd: rgba(0, 0, 0, 0.12);
+        --form-bd-focus: var(--primary-color);
+        --border-color: rgba(0, 0, 0, 0.1);
+        --light-grey: #f9f9f9;
+    }
+    
+    .dark-color {
+        --bg-color: var(--dark-bg-color);
+        --text-color: var(--dark-text-color);
+        --content-color: var(--dark-content-color);
+        --page-title-bg: #151515;
+        --page-title-color: #fff;
+        --link-color: var(--dark-link-color);
+        --link-color-hover: var(--dark-link-color-hover);
+        --text-lighter: #aaa;
+        --form-bd: rgba(255, 255, 255, 0.35);
+        --form-bd-focus: var(--primary-color);
+        --border-color: rgba(255, 255, 255, 0.15);
+        --light-grey: #151515;
+    }
+}
+
+@media (min-width: 1025px) {
+    :root {
+        --grid-unit: 32;
+        --spacing: 80px;
+    }
+}

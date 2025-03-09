@@ -1,0 +1,864 @@
+// Define base colors
+$primary-color:     #111;
+$text-color:        #111;
+$description-color: #888;
+
+@mixin transform($transform) {
+    -webkit-transform: $transform;
+    -ms-transform: $transform;
+    transform: $transform;
+}
+
+@mixin featuredslider($max-count) {
+    @for $i from 1 through $max-count {
+        &:nth-child(#{$i}) {
+            .cs-radiobtn + span.thumbnail:after {
+                background-position: 0 (-72*($i - 1))*1px;
+            }
+        }
+    }
+}
+
+@mixin cta($max-count) {
+    @for $i from 1 through $max-count {
+        &:nth-child(#{$i}) {
+            input[type="radio"] + span.thumbnail:after {
+                background-position: 0 (-63*($i - 1))*1px;
+            }
+        }
+    }
+}
+
+.hide {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+#customize-theme-controls.cs-customizer-wrapper {
+    .customize-section-title h3,
+    .accordion-section-title .preview-notice .panel-title {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .customize-control-title {
+        margin-top: 0;
+        color: $text-color;
+        font-size: 12px;
+
+        + span.description {
+            margin-top: -6px;
+        }
+    }
+
+    .amount,
+    .opacity {
+        &:after {
+            position: relative;
+            display: block;
+            content: "";
+            clear: both;
+        }
+    }
+
+    span.description {
+        margin-bottom: 12px;
+        color: $description-color;
+        font-size: 11px;
+        font-style: normal;
+
+        strong {
+            color: $text-color;
+            font-weight: bold;
+        }
+    }
+
+    a span.description {
+        color: inherit;
+    }
+
+    select,
+    textarea,
+    input {
+        border: 1px solid $primary-color;
+        font-size: 12px;
+
+        &:focus {
+            border-color: $primary-color;
+            box-shadow: 0 0 2px rgba(156, 165, 200,.8);
+        }
+    }
+
+    input[type="radio"]:checked:before {
+        background-color: $primary-color;
+    }
+
+    input[type="checkbox"]:checked:before {
+        color: $primary-color;
+    }
+
+    select[multiple] {
+        height: 120px;
+    }
+
+    label.title-first-checkbox,
+    li#customize-control-display_header_text label {
+        margin-left: 0;
+        color: $text-color;
+        font-size: 12px;
+
+        .customize-control-title {
+            display: inline-block;
+            max-width: calc(100% - 50px);
+        }
+
+        input[type="checkbox"] {
+            position: relative;
+            float: right;
+            width: 33px;
+            height: 33px;
+            background: #fff;
+            border-radius: 50%;
+            border: 1px solid $primary-color;
+            box-shadow: none;
+            font-size: 0;
+
+            + .description {
+                margin-top: 12px;
+            }
+
+            body.rtl & {
+                float: left;
+            }
+
+            &:checked:before {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                @include transform(translate(-50%, -50%));
+                margin: 0 0 0 -1px;
+                width: 21px;
+                height: 21px;
+                color: $primary-color;
+                font: 20px dashicons;
+            }
+        }
+    }
+
+    .accordion-section-content {
+        padding: 0;
+
+        &:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            content: "";
+        }
+
+        &#menu-to-edit,
+        &.control-section-sidebar {
+            &:before {
+                display: none;
+            }
+        }
+
+        li {
+            padding: 20px;
+            margin-bottom: 0;
+            border-top: 1px solid #e6e6e6;
+            box-sizing: border-box;
+
+            &.customize-section-description-container {
+                padding: 12px 12px 0;
+            }
+
+            &:nth-of-type(-n+2) {
+                border-top: none;
+            }
+
+            &.customize-control-title_only {
+                padding-bottom: 0;
+
+                h3 {
+                    padding: 10px;
+                    margin-top: 0.5em;
+                    background: #f3f3f5;
+                    text-align: center;
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    letter-spacing: 0.1em;
+                }
+
+                & + li {
+                    padding-top: 10px;
+                    border-top: none;
+                }
+            }
+
+            &#customize-control-loftocean_homepage_main_area {
+                background: #eee;
+            }
+
+            ul.loftocean-homepage-area-wrap {
+                li {
+                    padding: 0 0 20px;
+                    border: none;
+
+                    &:first-child {
+                        padding-top: 10px;
+                    }
+
+                    .widget-content {
+                        label.title {
+                            display: block;
+                            margin-bottom: 5px;
+                            font-weight: 600;
+                        }
+
+                        > *:not(:first-child) label.title {
+                            margin-top: 20px;
+                        }
+
+                        label.radio-wrapper {
+                            margin-right: 15px;
+                        }
+
+                        textarea {
+                            min-height: 86px;
+                        }
+
+                        .loftocean-homepage-widget-call-action-layout-radio-btn-wrap {
+                            display: block;
+                            overflow: hidden;
+
+                            label.radio-wrapper {
+                                position: relative;
+                                float: left;
+                                display: block;
+                                width: 105px;
+                                height: 105px;
+                                margin: 0 16px 15px 0;
+                                padding: 0;
+                                box-sizing: border-box;
+                                @include cta(5);
+
+                                body.rtl & {
+                                    float: right;
+                                    margin: 0 4px 15px 16px;
+                                }
+
+                                &:nth-child(2n) {
+                                    margin-right: 0;
+
+                                    body.rtl & {
+                                        margin-left: 0;
+                                    }
+                                }
+
+                                input[type="radio"] {
+                                    display: none;
+                                    width: inherit;
+                                    height: inherit;
+                                    opacity: 0;
+                                    margin: 0;
+
+                                    + span.thumbnail {
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        display: block;
+                                        height: 63px;
+                                        width: 105px;
+                                        border: 2px solid #ddd;
+                                        box-sizing: content-box;
+
+                                        &:after {
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                            display: block;
+                                            width: inherit;
+                                            height: inherit;
+                                            background-image: url(images/call-to-action-all.png);
+                                            background-size: 105px;
+                                            opacity: .5;
+                                            content: "";
+                                            box-sizing: border-box;
+                                        }
+                                    }
+
+                                    &:checked {
+                                        + span.thumbnail {
+                                            border-color: #000;
+
+                                            &:after {
+                                                opacity: 1;
+                                            }
+                                        }
+
+                                        ~ span.thumbnail-title {
+                                            opacity: 1;
+                                        }
+                                    }
+                                }
+
+                                span.thumbnail-title {
+                                    position: absolute;
+                                    bottom: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 30px;
+                                    font-size: 11px;
+                                    line-height: 14px;
+                                    text-align: center;
+                                    opacity: 0.5;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.control-section-sidebar,
+        &.menu,
+        &#sub-accordion-section-custom_css {
+            padding: 12px;
+
+            li {
+                padding: 0;
+                margin-bottom: 15px;
+                border: none;
+            }
+        }
+
+        &.menu li {
+            margin-bottom: 0;
+        }
+
+        &#sub-accordion-section-custom_css li#customize-control-custom_css:last-child {
+            margin-bottom: -12px;
+        }
+    }
+
+    .wp-picker-container {
+        overflow: visible;
+        width: auto;
+
+        .wp-color-result {
+            width: 24px;
+            height: 24px;
+            max-height: 24px;
+            min-height: 24px;
+            padding: 0;
+            margin-top: 2px;
+            border: 1px solid rgba(#000, 0.1);
+            border-radius: 50%;
+            box-shadow: none !important;
+            line-height: 28px;
+
+            &:after {
+                right: auto;
+                left: 24px;
+                width: 80px;
+                padding: 0 6px;
+                background: transparent;
+                border: none;
+                color: #555;
+                font-size: 11px;
+                text-align: left;
+                line-height: 24px;
+            }
+
+            .wp-color-result-text {
+                margin-left: 24px;
+                background: none;
+                border: none;
+                color: inherit;
+                line-height: 24px;
+
+                body.rtl & {
+                    margin-right: 24px;
+                    margin-left: 0;
+                }
+            }
+        }
+
+        .wp-picker-open + .wp-picker-input-wrap {
+            float: right;
+            width: auto;
+            margin-top: -2px;
+
+            body.rtl & {
+                float: left;
+            }
+        }
+
+        input[type="text"].wp-color-picker {
+            display: inline-block;
+            padding: 0 5px;
+            margin-top: 0;
+            width: 70px !important;
+            border: 1px solid $primary-color;
+            vertical-align: top;
+            line-height: 26px;
+        }
+
+        .button.wp-picker-default,
+        .button.wp-picker-clear {
+            height: 30px;
+            min-height: 30px;
+            margin-left: 6px;
+            box-shadow: none;
+            background: $primary-color;
+            color: #fff;
+            line-height: 26px;
+
+            @media screen and (max-width: 640px) {
+                & {
+                    padding: 0 10px 1px;
+                }
+            }
+        }
+    }
+
+    .attachment-media-view,
+    .media-widget-preview.media_audio,
+    .media-widget-preview.media_image {
+        background: none;
+    }
+
+    li.customize-control-number_slider {
+        input.readonly,
+        input[readonly] {
+            width: 40px;
+            background: none;
+            border: none;
+            box-shadow: none;
+            text-align: right;
+            font-weight: 600;
+        }
+
+        .ui-slider {
+            height: 20px;
+            background: none;
+            border: none;
+            border-radius: 0;
+
+            &:before {
+                position: absolute;
+                top: 8px;
+                left: 0;
+                display: block;
+                width: 100%;
+                height: 4px;
+                background: rgba(#000, 0.3);
+                content: "";
+            }
+
+            .ui-slider-range {
+                top: 8px;
+                height: 4px;
+                background: #000;
+                border-radius: 0;
+                border: none;
+            }
+
+            .ui-slider-handle {
+                width: 14px;
+                height: 14px;
+                margin-top: 7px;
+                background: #000;
+                border: none;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    li.customize-control-group {
+        h3.group-title {
+            padding: 10px;
+            margin: 0.5em 0 20px;
+            background: #f3f3f5;
+            text-align: center;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .group-controls-wrap {
+            li {
+                padding: 10px 0 20px;
+                border-top: none;
+
+                .customize-inside-control-row {
+                    margin-left: 0;
+                }
+
+                &.customize-control-checkbox .customize-inside-control-row input,
+                &.customize-control-radio .customize-inside-control-row input {
+                    margin-left: 0;
+                }
+
+                &.customize-control-number_slider {
+                    padding-top: 20px;
+                }
+            }
+        }
+    }
+
+    li#customize-control-cozystay_post_excerpt_length_group {
+        .group-controls-wrap {
+            li:first-of-type {
+                padding-top: 10px;
+            }
+        }
+    }
+
+    li#customize-control-cozystay_site_layout_options_group ~ li,
+    li#customize-control-cozystay_single_post_signup_form_id {
+        padding-top: 0;
+        border-top: none;
+    }
+
+    ul#input_woocommerce_thumbnail_cropping {
+        margin-right: 0;
+
+        li {
+            padding-right: 0;
+            padding-left: 0;
+            border: none;
+        }
+    }
+
+    li.customize-control-nav_menu_auto_add {
+        margin-top: 12px;
+    }
+
+    li.customize-control-multiple_checkbox .multiple-checkbox-wrap {
+        label {
+            display: block;
+            margin-top: 25px;
+        }
+
+        + span.description {
+            margin-top: 25px;
+        }
+    }
+
+    li#customize-control-cozystay_single_post_related_post_number {
+        .customize-control-title {
+            float: left;
+            width: calc(100% - 40px);
+
+            + span {
+                float: right;
+            }
+        }
+
+        .ui-slider {
+            clear: both;
+        }
+    }
+
+    #cozystay_header_style,
+    #cozystay_featured_slider {
+        label {
+            position: relative;
+            display: block;
+            padding: 0;
+            box-sizing: border-box;
+
+            .cs-radiobtn {
+                display: none;
+                width: inherit;
+                height: inherit;
+                opacity: 0;
+                margin: 0;
+
+                + span.thumbnail {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: block;
+                    border: 2px solid #ddd;
+                    box-sizing: content-box;
+
+                    &:after {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        display: block;
+                        width: inherit;
+                        height: inherit;
+                        opacity: .5;
+                        content: "";
+                        box-sizing: border-box;
+                    }
+                }
+
+                &:checked {
+                    + span.thumbnail {
+                        border-color: #000;
+
+                        &:after {
+                            opacity: 1;
+                        }
+                    }
+
+                    ~ span.thumbnail-title {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            span.thumbnail-title {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 30px;
+                font-size: 11px;
+                line-height: 30px;
+                text-align: center;
+                opacity: 0.5;
+            }
+        }
+    }
+
+    #cozystay_header_style {
+        label {
+            width: 260px;
+            height: 80px;
+            margin: 0 0 10px;
+
+            .cs-radiobtn {
+                + span.thumbnail {
+                    width: 260px;
+                    height: 50px;
+
+                    &:after {
+                        background-image: url(images/site-header-all.jpg);
+                        background-size: 260px;
+                        background-position: 0 0;
+                    }
+                }
+            }
+
+            &:nth-child(2) {
+                height: 73px;
+            }
+
+            #cozystay_site_header_layout-layout-2 + span.thumbnail {
+                height: 43px;
+
+                &:after {
+                    background-position: 0 -50px;
+                }
+            }
+
+            #cozystay_site_header_layout-layout-3 + span.thumbnail {
+                height: 43px;
+
+                &:after {
+                    background-position: 0 -94px;
+                }
+            }
+
+            #cozystay_site_header_layout-layout-4 + span.thumbnail {
+                height: 46px;
+
+                &:after {
+                    background-position: 0 -136px;
+                }
+            }
+        }
+    }
+
+    #cozystay_featured_slider {
+        label {
+            float: left;
+            margin: 0 16px 10px 0;
+            width: 120px;
+            height: 102px;
+            @include featuredslider(6);
+
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+
+            body.rtl & {
+                float: right;
+                margin: 0 0 10px 16px;
+
+                &:nth-child(2n) {
+                    margin-left: 0;
+                }
+            }
+
+            .cs-radiobtn {
+                + span.thumbnail {
+                    width: 120px;
+                    height: 72px;
+
+                    &:after {
+                        background-image: url(images/sliders.png);
+                        background-size: 120px;
+                    }
+                }
+            }
+        }
+    }
+
+    #loftocean-homepage-widget-custom-content-3-custom-bg-overlay-opacity {
+        .ui-slider {
+            height: 20px;
+            background: none;
+            border: none;
+            border-radius: 0;
+
+            &:before {
+                position: absolute;
+                top: 8px;
+                left: 0;
+                display: block;
+                width: 100%;
+                height: 4px;
+                background: rgba(#000, 0.3);
+                content: "";
+            }
+
+            .ui-slider-range {
+                top: 8px;
+                height: 4px;
+                background: #000;
+                border-radius: 0;
+                border: none;
+            }
+
+            .ui-slider-handle {
+                width: 14px;
+                height: 14px;
+                margin-top: 7px;
+                background: #000;
+                border: none;
+                border-radius: 50%;
+            }
+        }
+
+        .rtl & .amount.opacity {
+            float: left !important;
+        }
+    }
+
+    .rtl & {
+        li.customize-control-number_slider span.customize-control-title + span,
+        li.customize-control-number_with_unit .number-with-label-wrapper {
+            float: left !important;
+        }
+    }
+
+    #customize-control-cozystay_general_social_media_group {
+        text-transform: capitalize;
+
+        span.description {
+            display: none;
+        }
+    }
+
+    .reordering .move-widget-area.active .widget-area-select li {
+        padding: 9px 15px 11px 42px;
+
+        .rtl & {
+            padding-right: 42px;
+            padding-left: 15px;
+        }
+    }
+
+    .sortable.ui-sortable {
+        display: block;
+        margin-top: 10px;
+
+        li {
+            display: flex;
+            background: #f7f7f7;
+            border: 1px solid #ddd !important;
+            padding: 5px 10px 5px 20px !important;
+            margin-bottom: 5px;
+            line-height: 24px;
+            cursor: move;
+
+            &:hover,
+            &:focus {
+                background: #fff;
+                border-color: #999 !important;
+                box-shadow: 0 0 20px rgba(#000, 0.1);
+            }
+
+            span {
+                margin-right: auto;
+                margin-left: 0;
+
+                .rtl & {
+                    margin-right: 0;
+                    margin-left: auto;
+                }
+            }
+
+            .action-remove {
+                margin-right: 0;
+                color: inherit;
+                text-decoration: none;
+                line-height: 23px;
+                width: 24px;
+                height: 24px;
+                text-align: center;
+                border-radius: 50%;
+                font-size: 0;
+
+                &:before {
+                    font: normal 14px/24px dashicons;
+                    content: "\f335";
+                }
+
+                &:hover {
+                    background: #222;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .cs-align-right {
+        float: right;
+    }
+
+    .cs-align-left {
+        float: left;
+    }
+
+    .cs-clear-float {
+        clear: both;
+    }
+
+    .cs-display-inline {
+        display: inline;
+    }
+
+    .cs-display-inline-block {
+        display: inline-block;
+    }
+
+    .number-with-label-wrapper input[type="number"] {
+        width: 70px;
+    }
+
+    .customize-control-number_with_unit .customize-control-title {
+        line-height: 30px;
+    }
+}

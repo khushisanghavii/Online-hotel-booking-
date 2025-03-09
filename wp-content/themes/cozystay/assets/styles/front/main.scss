@@ -1,0 +1,48 @@
+/*
+This is main CSS file for the theme.
+*/
+
+/**
+ * Table of Contents:
+ *
+ * 1.0 - Normalize 
+ * 2.0 - General Elements
+ * 3.0 - Typography
+ * 4.0 - Header & Menu
+ * 5.0 - Blog & Posts
+ * 6.0 - Single Post & Pages
+ * 7.0 - Widgets
+ * 8.0 - Forms
+ * 9.0 - Media
+ * 10.0 - Blocks & Shortcodes
+ * 11.0 - Rooms
+ * 12.0 - Elementor Elements
+ */
+
+@import 'scss/variables';
+
+@import 'scss/mixins';
+
+@import 'scss/normalize';
+
+@import 'scss/elements';
+
+@import 'scss/typography';
+
+@import 'scss/menu';
+
+@import 'scss/blog';
+
+@import 'scss/single';
+
+@import 'scss/widgets';
+
+@import 'scss/forms';
+
+@import 'scss/media';
+
+@import 'scss/shortcode-block';
+
+@import 'scss/rooms';
+
+@import 'scss/cs-elementor';

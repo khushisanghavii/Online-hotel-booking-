@@ -1,0 +1,268 @@
+/* ==========================================================================
+   9.0 Media
+   ========================================================================== */
+
+.site .avatar {
+	border-radius: 50%;
+}
+
+.entry-content,
+.comment-content,
+.textwidget {
+    .wp-smiley {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+        border: none;
+    }
+}
+
+.comment-content,
+.textwidget {
+	a img {
+        display: block;
+    }
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object,
+video {
+	margin-bottom: $spacing-base;
+	max-width: 100%;
+	border: none;
+	vertical-align: middle;
+    
+    p > & {
+        margin-bottom: 0;
+    }
+}
+
+.fluid-width-video-wrapper {
+	margin-bottom: $spacing-base;
+	
+	iframe {
+		margin-bottom: 0;
+	}
+}
+
+.wp-block-embed-twitter iframe {
+	margin-bottom: 0;
+}
+
+.wp-video-shortcode {
+	margin-bottom: $spacing-base;
+}
+
+#page .wp-playlist {
+    margin: 0 0 $spacing-base;
+    padding-bottom: 0;
+	
+	.wp-playlist-tracks {
+		margin-top: 0;
+	}
+	
+	a {
+		border-bottom: none;
+		box-shadow: none !important;
+	}
+}
+
+.wp-playlist-item .wp-playlist-caption {
+	padding: $spacing-base/2 0;
+    margin-left: 0;
+    color: inherit !important;
+}
+
+.wp-playlist-item .wp-playlist-item-length {
+    top: 50%;
+    @include translateY(-50%);
+}
+
+.mejs-container a {
+	padding-bottom: 0;
+	border-bottom: none;
+	box-shadow: none !important;
+}
+
+/**
+ * Captions
+ */
+
+.wp-caption {
+    margin: $spacing-base 0;
+    max-width: 100%;
+	clear: both;
+    
+    &.aligncenter {
+        text-align: center;
+    }
+}
+    
+.wp-caption-text,
+figcaption {
+	display: block;
+	padding: 14px 0;
+    text-align: center;
+    line-height: 1.5;
+	font-weight: 400;
+	font-size: smaller;
+	color: var(--text-lighter);
+}
+
+.entry-content p > img.alignnone {
+	margin-top: $spacing-base;
+	margin-bottom: $spacing-base;
+	
+	&:first-child {
+		margin-top: 0;
+	}
+	
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.blocks-gallery-grid + .blocks-gallery-caption {
+	padding-top: 0;
+}
+
+.blocks-gallery-grid .blocks-gallery-item figcaption {
+	opacity: 1;
+	font-family: var(--body-font);
+	@include fontsize(14);
+	font-style: normal;
+}
+
+img[class*="wp-image-"] {
+    display: block;
+	margin-left: 0;
+	
+	&.aligncenter {
+		margin-right: auto;
+		margin-left: auto;
+	}
+	
+	&.alignright {
+		margin-right: 0;
+		margin-left: $spacing-base;
+	}
+}
+
+/**
+ * Galleries
+ */
+
+.gallery {
+	margin: 0 -2px $spacing-base;
+    
+    .gallery-item {
+		float: left;
+        display: inline-block;
+		width: 100%;
+        max-width: 33.33%;
+        text-align: center;
+        vertical-align: top;
+        
+        .gallery-icon {
+            font-size: 0;
+			padding: 0 2px 4px;
+            
+            a {
+                transition: 0s;
+            }
+            
+            img {
+                margin: 0 auto;
+            }
+        }
+		
+		.gallery-caption {
+			padding: 6px 10px 20px;
+		}
+    }
+    
+    &.gallery-columns-1 {
+        .gallery-item {
+            max-width: 100%;
+        }
+    }
+    
+    &.gallery-columns-2 {
+        .gallery-item {
+            max-width: 50%;
+        }
+    }
+    
+    &.gallery-columns-4 {
+        .gallery-item {
+            max-width: 25%;
+        }
+    }
+    
+    &.gallery-columns-5 {
+        .gallery-item {
+            max-width: 20%;
+        }
+    }
+    
+    &.gallery-columns-6 {
+        .gallery-item {
+            max-width: 16.66%;
+        }
+    }
+    
+    &.gallery-columns-7 {
+        .gallery-item {
+            max-width: 14.28%;
+        }
+    }
+    
+    &.gallery-columns-8 {
+        .gallery-item {
+            max-width: 12.5%;
+        }
+    }
+    
+    &.gallery-columns-9 {
+        .gallery-item {
+            max-width: 11.11%;
+        }
+    }
+	
+	&.gallery-columns-1 .gallery-item,
+	&.gallery-columns-2 .gallery-item:nth-child(2n+1),
+	&.gallery-columns-3 .gallery-item:nth-child(3n+1),
+	&.gallery-columns-4 .gallery-item:nth-child(4n+1),
+	&.gallery-columns-5 .gallery-item:nth-child(5n+1),
+	&.gallery-columns-6 .gallery-item:nth-child(6n+1),
+	&.gallery-columns-7 .gallery-item:nth-child(7n+1),
+	&.gallery-columns-8 .gallery-item:nth-child(8n+1),
+	&.gallery-columns-9 .gallery-item:nth-child(9n+1) {
+		clear: left;
+	}
+}
+
+.gallery-columns-6,
+.gallery-columns-7,
+.gallery-columns-8,
+.gallery-columns-9 {
+    .gallery-caption {
+        display: none;
+    }
+}
+
+/**
+ * Embeded Twitter Tweet
+ */
+
+.entry-content .twitter-tweet.twitter-tweet-rendered {
+	margin-left: 0;
+}
+
+@media screen and (max-width: 599px) {
+	.gallery:not(.gallery-columns-1):not(.gallery-columns-2) .gallery-item .gallery-caption {
+		display: none;
+	}
+}
